@@ -122,14 +122,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\..\Desktop\ProyectoCentroComputacion\BackUp Proyecto\FormVenta.Designer.vb">
-      <DependentUpon>FormVenta.vb</DependentUpon>
-      <Link>FormVenta.Designer.vb</Link>
-    </Compile>
-    <Compile Include="..\..\..\..\Desktop\ProyectoCentroComputacion\BackUp Proyecto\FormVenta.vb">
-      <SubType>Form</SubType>
-      <Link>FormVenta.vb</Link>
-    </Compile>
     <Compile Include="Component1.Designer.vb">
       <DependentUpon>Component1.vb</DependentUpon>
     </Compile>
@@ -180,6 +172,12 @@
     <Compile Include="FormPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormVenta.Designer.vb">
+      <DependentUpon>FormVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -209,10 +207,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="..\..\..\..\Desktop\ProyectoCentroComputacion\BackUp Proyecto\FormVenta.resx">
-      <DependentUpon>FormVenta.vb</DependentUpon>
-      <Link>FormVenta.resx</Link>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -237,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormTesoro.resx">
       <DependentUpon>FormTesoro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVenta.resx">
+      <DependentUpon>FormVenta.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
