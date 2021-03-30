@@ -34,3 +34,15 @@ C:\Users\axel\Desktop\Proyectos\SanJustoCentro\DataAccess\obj\Debug\netstandard2
 C:\Users\axel\Desktop\Proyectos\SanJustoCentro\DataAccess\obj\Debug\netstandard2.0\DataAccess.vbproj.CopyComplete
 C:\Users\axel\Desktop\Proyectos\SanJustoCentro\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
 C:\Users\axel\Desktop\Proyectos\SanJustoCentro\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\axel\Desktop\SanJustoCentro\DataAccess\bin\Debug\netstandard2.0\DataAccess.deps.json
+C:\Users\axel\Desktop\SanJustoCentro\DataAccess\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Users\axel\Desktop\SanJustoCentro\DataAccess\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\axel\Desktop\SanJustoCentro\DataAccess\bin\Debug\netstandard2.0\CapaComun.dll
+C:\Users\axel\Desktop\SanJustoCentro\DataAccess\bin\Debug\netstandard2.0\CapaComun.pdb
+C:\Users\axel\Desktop\SanJustoCentro\DataAccess\obj\Debug\netstandard2.0\DataAccess.vbprojAssemblyReference.cache
+C:\Users\axel\Desktop\SanJustoCentro\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\axel\Desktop\SanJustoCentro\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.vb
+C:\Users\axel\Desktop\SanJustoCentro\DataAccess\obj\Debug\netstandard2.0\DataAccess.vbproj.CoreCompileInputs.cache
+C:\Users\axel\Desktop\SanJustoCentro\DataAccess\obj\Debug\netstandard2.0\DataAccess.vbproj.CopyComplete
+C:\Users\axel\Desktop\SanJustoCentro\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
+C:\Users\axel\Desktop\SanJustoCentro\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb

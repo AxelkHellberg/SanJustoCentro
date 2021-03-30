@@ -121,6 +121,8 @@ Public Class FormTesoro
                 TotalTotal.Text = FormatNumber(command.ExecuteScalar(), 0)
                 command.CommandText = "SELECT efectivo FROM Tesoro WHERE sucursal='Arieta'"
                 TotalTotalArieta.Text = FormatNumber(command.ExecuteScalar(), 0)
+                command.CommandText = "SELECT efectivo FROM Tesoro WHERE sucursal='Arieta2'"
+                TotalTotalArieta2.Text = FormatNumber(command.ExecuteScalar(), 0)
             End Using
         End Using
         Return True

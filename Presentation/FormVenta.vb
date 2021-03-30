@@ -116,14 +116,14 @@ Public Class FormVenta
                         Exit Sub
                     Else
 
-                        command.CommandText = "select codigo As Codigo,descripcion As Descripcion,stockPeru As 'Stock Peru',stockArieta As 'Stock Arieta',precio As Precio FROM Producto WHERE descripcion LIKE '%'+@desc+'%'"
+                        command.CommandText = "select codigo As Codigo,descripcion As Descripcion,stockPeru As 'Stock Peru',stockArieta As 'Stock A3300',stockArieta2 as 'Stock A3100',precio As Precio FROM Producto WHERE descripcion LIKE '%'+@desc+'%'"
                         command.Parameters.AddWithValue("@desc", TextDescripcion.Text)
                         command.CommandType = CommandType.Text
                         TextDescripcion.Clear()
                     End If
                 Else
 
-                    command.CommandText = "select codigo As Codigo,descripcion As Descripcion,stockPeru As 'Stock Peru',stockArieta As 'Stock Arieta',precio As Precio FROM Producto WHERE codigo = @cod"
+                    command.CommandText = "select codigo As Codigo,descripcion As Descripcion,stockPeru As 'Stock Peru',stockArieta As 'Stock A3300',stockArieta2 as 'Stock A3100',precio As Precio FROM Producto WHERE codigo = @cod"
                     command.Parameters.AddWithValue("@cod", TextCodigoBarra.Text)
                     command.CommandType = CommandType.Text
 
@@ -144,7 +144,8 @@ Public Class FormVenta
                     DataGridViewBusqueda.Columns(1).Width = 80
                     DataGridViewBusqueda.Columns(2).Width = 20
                     DataGridViewBusqueda.Columns(3).Width = 20
-                    DataGridViewBusqueda.Columns(4).Width = 80
+                    DataGridViewBusqueda.Columns(4).Width = 20
+                    DataGridViewBusqueda.Columns(5).Width = 80
 
                 Else
                     DataGridViewBusqueda.Columns.Clear()
@@ -721,17 +722,14 @@ Public Class FormVenta
 
     End Sub
 
+#End Region
 
-
-
-
-
-
-
-
+#Region " asd "
 
 
 #End Region
+
+
 
 
 

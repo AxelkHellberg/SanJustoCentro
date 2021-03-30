@@ -7,6 +7,13 @@ Public Class FormPrincipal
         ' Esta llamada es exigida por el diseñador.
         InitializeComponent()
         TextoSucursal.Text = sucursalPA
+        If sucursalPA = "Arieta" Then
+            If sucursalAltura = "3100" Then
+                TextoAltura.Text = "3100"
+            Else
+                TextoAltura.Text = "3300"
+            End If
+        End If
         ' Agregue cualquier inicialización después de la llamada a InitializeComponent().
         PictureBox1_Click(Nothing, Nothing)
         permisos()
@@ -171,6 +178,8 @@ Public Class FormPrincipal
     Private Sub Button2_Click_2(sender As Object, e As EventArgs) Handles BotonCobranzas.Click
         AbrirFormEnPanel(Of FormCobranzas)()
     End Sub
+
+
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         AbrirFormEnPanel(Of FormVenta)()

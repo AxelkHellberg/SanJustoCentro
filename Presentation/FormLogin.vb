@@ -74,8 +74,13 @@ Public Class FormLogin
                 sucursalPA = "Arieta"
                 sucursalAltura = "3395"
             Else
-                MessageBox.Show("Error en la sucursal.")
-                Exit Sub
+                If TextSucursal.Text = 3 Then
+                    sucursalPA = "Arieta"
+                    sucursalAltura = "3100"
+                Else
+                    MessageBox.Show("Error en la sucursal.")
+                    Exit Sub
+                End If
             End If
         End If
         Dim userModel As New UserModel()

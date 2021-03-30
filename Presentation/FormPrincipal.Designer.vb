@@ -40,6 +40,7 @@ Partial Class FormPrincipal
         Me.btnMaximizar = New System.Windows.Forms.PictureBox()
         Me.btnMinimize = New System.Windows.Forms.PictureBox()
         Me.btnClose = New System.Windows.Forms.PictureBox()
+        Me.TextoAltura = New System.Windows.Forms.Label()
         Me.panelContenedor.SuspendLayout()
         Me.PanelFormularios.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -210,6 +211,7 @@ Partial Class FormPrincipal
         'PanelBarraTitulo
         '
         Me.PanelBarraTitulo.BackColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.PanelBarraTitulo.Controls.Add(Me.TextoAltura)
         Me.PanelBarraTitulo.Controls.Add(Me.TextoTelefono)
         Me.PanelBarraTitulo.Controls.Add(Me.TextoSucursal)
         Me.PanelBarraTitulo.Controls.Add(Me.TextoPrincipal)
@@ -304,6 +306,16 @@ Partial Class FormPrincipal
         Me.btnClose.TabIndex = 3
         Me.btnClose.TabStop = False
         '
+        'TextoAltura
+        '
+        Me.TextoAltura.AutoSize = True
+        Me.TextoAltura.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextoAltura.ForeColor = System.Drawing.SystemColors.ScrollBar
+        Me.TextoAltura.Location = New System.Drawing.Point(346, 9)
+        Me.TextoAltura.Name = "TextoAltura"
+        Me.TextoAltura.Size = New System.Drawing.Size(0, 25)
+        Me.TextoAltura.TabIndex = 42
+        '
         'FormPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -348,4 +360,5 @@ Partial Class FormPrincipal
     Public WithEvents BotonTesoro As Button
     Public WithEvents BotonAnalisis As Button
     Public WithEvents BotonCobranzas As Button
+    Friend WithEvents TextoAltura As Label
 End Class
