@@ -1,0 +1,122 @@
+C:\Users\axel\source\repos\LoginLayered\Presentation\obj\Debug\Presentation.vbprojAssemblyReference.cache
+C:\Users\axel\source\repos\LoginLayered\Presentation\obj\Debug\Presentation.Resources.resources
+C:\Users\axel\source\repos\LoginLayered\Presentation\obj\Debug\Presentation.vbproj.GenerateResource.cache
+C:\Users\axel\source\repos\LoginLayered\Presentation\obj\Debug\Presentation.vbproj.CoreCompileInputs.cache
+C:\Users\axel\source\repos\LoginLayered\Presentation\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\axel\source\repos\LoginLayered\Presentation\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.resources.dll
+C:\Users\axel\source\repos\LoginLayered\Presentation\obj\Debug\Presentation.vbproj.CopyComplete
+C:\Users\axel\source\repos\LoginLayered\Presentation\obj\Debug\Presentation.FormLogin.resources
+C:\Users\axel\source\repos\LoginLayered\Presentation\obj\Debug\Presentation.FormPrincipal.resources
+C:\Users\axel\source\repos\LoginLayered\Presentation\bin\Debug\Domain.dll
+C:\Users\axel\source\repos\LoginLayered\Presentation\bin\Debug\DataAccess.dll
+C:\Users\axel\source\repos\LoginLayered\Presentation\bin\Debug\Domain.pdb
+C:\Users\axel\source\repos\LoginLayered\Presentation\bin\Debug\DataAccess.pdb
+C:\Users\axel\source\repos\LoginLayered\Presentation\bin\Debug\System.Data.SqlClient.dll
+C:\Users\axel\source\repos\LoginLayered\Presentation\bin\Debug\System.Data.SqlClient.xml
+C:\Users\axel\source\repos\LoginLayered\Presentation\bin\Debug\CapaComun.dll
+C:\Users\axel\source\repos\LoginLayered\Presentation\bin\Debug\CapaComun.pdb
+C:\Users\axel\source\repos\LoginLayered\Presentation\obj\Debug\Presentation.FormVenta.resources
+C:\Users\axel\source\repos\LoginLayered\Presentation\obj\Debug\Presentation.FormCompra.resources
+C:\Users\axel\source\repos\LoginLayered\Presentation\obj\Debug\Presentation.vbproj.ResolveComReference.cache
+C:\Users\axel\source\repos\LoginLayered\Presentation\obj\Debug\Presentation.FormCaja.resources
+C:\Users\axel\source\repos\LoginLayered\Presentation\obj\Debug\Presentation.FormTesoro.resources
+C:\Users\axel\source\repos\LoginLayered\Presentation\bin\Debug\itextsharp.dll
+C:\Users\axel\source\repos\LoginLayered\Presentation\bin\Debug\itextsharp.xml
+C:\Users\axel\source\repos\LoginLayered\Presentation\bin\Debug\San Justo Centro Computacion.exe.config
+C:\Users\axel\source\repos\LoginLayered\Presentation\bin\Debug\San Justo Centro Computacion.exe.manifest
+C:\Users\axel\source\repos\LoginLayered\Presentation\bin\Debug\San Justo Centro Computacion.application
+C:\Users\axel\source\repos\LoginLayered\Presentation\bin\Debug\San Justo Centro Computacion.exe
+C:\Users\axel\source\repos\LoginLayered\Presentation\bin\Debug\San Justo Centro Computacion.pdb
+C:\Users\axel\source\repos\LoginLayered\Presentation\bin\Debug\San Justo Centro Computacion.xml
+C:\Users\axel\source\repos\LoginLayered\Presentation\obj\Debug\San Justo Centro Computacion.TrustInfo.xml
+C:\Users\axel\source\repos\LoginLayered\Presentation\obj\Debug\San Justo Centro Computacion.exe.manifest
+C:\Users\axel\source\repos\LoginLayered\Presentation\obj\Debug\San Justo Centro Computacion.application
+C:\Users\axel\source\repos\LoginLayered\Presentation\obj\Debug\San Justo Centro Computacion.exe
+C:\Users\axel\source\repos\LoginLayered\Presentation\obj\Debug\San Justo Centro Computacion.xml
+C:\Users\axel\source\repos\LoginLayered\Presentation\obj\Debug\San Justo Centro Computacion.pdb
+C:\Users\axel\source\repos\LoginLayered\Presentation\obj\Debug\Presentation.FormAnalisis.resources
+C:\Users\axel\source\repos\LoginLayered\Presentation\obj\Debug\Presentation.FormCliente.resources
+C:\Users\axel\source\repos\LoginLayered\Presentation\obj\Debug\Presentation.FormCobranzas.resources
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\bin\Debug\San Justo Centro Computacion.exe.config
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\bin\Debug\San Justo Centro Computacion.exe.manifest
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\bin\Debug\San Justo Centro Computacion.application
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\bin\Debug\San Justo Centro Computacion.exe
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\bin\Debug\San Justo Centro Computacion.pdb
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\bin\Debug\San Justo Centro Computacion.xml
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\bin\Debug\CapaComun.dll
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\bin\Debug\Domain.dll
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\bin\Debug\itextsharp.dll
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\bin\Debug\System.Data.SqlClient.dll
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\bin\Debug\DataAccess.dll
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\bin\Debug\CapaComun.pdb
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\bin\Debug\Domain.pdb
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\bin\Debug\itextsharp.xml
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\bin\Debug\System.Data.SqlClient.xml
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\bin\Debug\DataAccess.pdb
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.resources.dll
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\obj\Debug\Presentation.vbprojAssemblyReference.cache
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\obj\Debug\Presentation.vbproj.ResolveComReference.cache
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\obj\Debug\Presentation.FormVenta.resources
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\obj\Debug\Presentation.FormCliente.resources
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\obj\Debug\Presentation.FormAnalisis.resources
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\obj\Debug\Presentation.FormCaja.resources
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\obj\Debug\Presentation.FormCobranzas.resources
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\obj\Debug\Presentation.FormCompra.resources
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\obj\Debug\Presentation.FormLogin.resources
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\obj\Debug\Presentation.FormPrincipal.resources
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\obj\Debug\Presentation.FormTesoro.resources
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\obj\Debug\Presentation.Resources.resources
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\obj\Debug\Presentation.vbproj.GenerateResource.cache
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\obj\Debug\Presentation.vbproj.CoreCompileInputs.cache
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\obj\Debug\San Justo Centro Computacion.TrustInfo.xml
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\obj\Debug\San Justo Centro Computacion.exe.manifest
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\obj\Debug\San Justo Centro Computacion.application
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\obj\Debug\Presentation.vbproj.CopyComplete
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\obj\Debug\San Justo Centro Computacion.exe
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\obj\Debug\San Justo Centro Computacion.xml
+C:\Users\axel\Desktop\Proyectos\CentroComputacion\Presentation\obj\Debug\San Justo Centro Computacion.pdb
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\San Justo Centro Computacion.exe.config
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\San Justo Centro Computacion.exe.manifest
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\San Justo Centro Computacion.application
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\San Justo Centro Computacion.exe
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\San Justo Centro Computacion.pdb
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\San Justo Centro Computacion.xml
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\CapaComun.dll
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\Domain.dll
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\itextsharp.dll
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\System.Data.SqlClient.dll
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\DataAccess.dll
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\CapaComun.pdb
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\Domain.pdb
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\itextsharp.xml
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\System.Data.SqlClient.xml
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\DataAccess.pdb
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.resources.dll
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.vbprojAssemblyReference.cache
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.vbproj.ResolveComReference.cache
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.FormVenta.resources
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.FormCliente.resources
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.FormAnalisis.resources
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.FormCaja.resources
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.FormCobranzas.resources
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.FormCompra.resources
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.FormLogin.resources
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.FormPrincipal.resources
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.FormTesoro.resources
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.Resources.resources
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.vbproj.GenerateResource.cache
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.vbproj.CoreCompileInputs.cache
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\San Justo Centro Computacion.TrustInfo.xml
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\San Justo Centro Computacion.exe.manifest
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\San Justo Centro Computacion.application
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.vbproj.CopyComplete
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\San Justo Centro Computacion.exe
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\San Justo Centro Computacion.xml
+C:\Users\axel\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\San Justo Centro Computacion.pdb
+C:\Users\axel\Desktop\SanJustoCentro\Presentation\obj\Debug\Presentation.vbprojAssemblyReference.cache
+C:\Users\axel\Desktop\SanJustoCentro\Presentation\obj\Debug\Presentation.vbproj.ResolveComReference.cache
+C:\Users\axel\Desktop\SanJustoCentro\Presentation\obj\Debug\San Justo Centro Computacion.exe
+C:\Users\axel\Desktop\SanJustoCentro\Presentation\obj\Debug\San Justo Centro Computacion.xml
+C:\Users\axel\Desktop\SanJustoCentro\Presentation\obj\Debug\San Justo Centro Computacion.pdb

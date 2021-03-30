@@ -1,0 +1,271 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+San Justo Centro Computacion
+</name>
+</assembly>
+<members>
+<member name="T:Presentation.My.Resources.Resources">
+<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.ResourceManager">
+<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.Culture">
+<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources._127_1270799_logo_computadora_png_desktop_computer">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources._695664d2490fd207af48a719d4fc3df3_icono_de_la_computadora_de_escritorio_by_vexels">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.application_office_excel_2474">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.bar_graph1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.blue_monument_library_roma_12570">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.blue_upgrade_recyclearrows_arrow_azul_12426">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.bluefilefolder_azul_archivo_12582">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.bluefilefolder_azul_archivo_12582__1_">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.bluefilefolder_azul_archivo_12582__2_">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.calendar__1_1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.cancel">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.este">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.free_website_icon_17">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.free_website_icon_171">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.logout__1_1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.logout__1_11">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.magnifier">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.magnifying_glass_156474_640">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.Material_icons_01_08_512">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.maximize3">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.Minimize">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.Minimize1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.Minimize2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.payment1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.person_settings1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.phone_book__1_1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.phone_book__1_11">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.png_transparent_account_based_marketing_business_education_magnifying_glass_marketing_purple_glass_violet">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.pngegg__1_">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.pngegg__2_">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.Refresh_icon">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.seo1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.seo11">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.tesoro">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.user__1_">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Presentation.My.Resources.Resources.x_close_icon_white">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:Presentation.sanjusto_centroDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Presentation.sanjusto_centroDataSet.ClienteDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Presentation.sanjusto_centroDataSet.ClienteRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Presentation.sanjusto_centroDataSet.ClienteRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Presentation.sanjusto_centroDataSetTableAdapters.ClienteTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Presentation.sanjusto_centroDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Presentation.sanjusto_centroDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Presentation.sanjusto_centroDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Presentation.sanjusto_centroDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Presentation.sanjusto_centroDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Presentation.sanjusto_centroDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Presentation.sanjusto_centroDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Presentation.sanjusto_centroDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Presentation.sanjusto_centroDataSetTableAdapters.TableAdapterManager.UpdateAll(Presentation.sanjusto_centroDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Presentation.sanjusto_centroDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Presentation.sanjusto_centroDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

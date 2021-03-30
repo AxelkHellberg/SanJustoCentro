@@ -1,0 +1,1 @@
+Saque la FK_codProd de tabla vende
