@@ -85,14 +85,14 @@ Public Class FormCompra
                         Exit Sub
                     Else
 
-                        command.CommandText = "select * FROM Producto WHERE descripcion LIKE '%'+@desc+'%'"
+                        command.CommandText = "select codigo as Codigo,descripcion as Descripcion,costo as Costo,precio as Precio,stockPeru as 'Stock Peru',stockArieta as 'Stock A3300',stockArieta2 as 'Stock A3100',porcentaje as '%%' FROM Producto WHERE descripcion LIKE '%'+@desc+'%'"
                         command.Parameters.AddWithValue("@desc", TextDescripcion.Text)
                         command.CommandType = CommandType.Text
 
                     End If
                 Else
 
-                    command.CommandText = "select * FROM Producto WHERE codigo LIKE '%'+@cod+'%'"
+                    command.CommandText = "select odigo as Codigo,descripcion as Descripcion,costo as Costo,precio as Precio,stockPeru as 'Stock Peru',stockArieta as 'Stock A3300',stockArieta2 as 'Stock A3100',porcentaje as '%%' FROM Producto WHERE codigo LIKE '%'+@cod+'%'"
                     command.Parameters.AddWithValue("@cod", TextCodigoBarra.Text)
                     command.CommandType = CommandType.Text
 
@@ -114,8 +114,9 @@ Public Class FormCompra
                     DataGridViewBusqueda.Columns(2).Width = 20
                     DataGridViewBusqueda.Columns(3).Width = 20
                     DataGridViewBusqueda.Columns(4).Width = 20
-                    DataGridViewBusqueda.Columns(5).Width = 35
-                    DataGridViewBusqueda.Columns(6).Width = 50
+                    DataGridViewBusqueda.Columns(5).Width = 20
+                    DataGridViewBusqueda.Columns(6).Width = 20
+                    DataGridViewBusqueda.Columns(7).Width = 50
 
                 Else
                     DataGridViewBusqueda.Columns.Clear()
@@ -135,12 +136,21 @@ Public Class FormCompra
         If String.IsNullOrEmpty(TextCodigoBarra.Text) Or String.IsNullOrEmpty(TextCantPeru.Text) Or String.IsNullOrEmpty(TextCosto.Text) Or String.IsNullOrEmpty(TextPrecio.Text) Or String.IsNullOrEmpty(TextPorcentaje.Text) Then
             MessageBox.Show("Error en el relleno de campos.")
         Else
-            DataGridViewCompra.Rows.Add(TextCodigoBarra.Text.Trim(), TextDescripcion.Text.Trim(), TextCantPeru.Text.Trim(), TextCantArieta.Text.Trim(), TextCosto.Text.Trim(), TextPorcentaje.Text.Trim(), TextPrecio.Text.Trim())
+            DataGridViewCompra.Rows.Add(TextCodigoBarra.Text.Trim(), TextDescripcion.Text.Trim(), TextCantPeru.Text.Trim(), TextCantArieta.Text.Trim(), TextCantArieta2.Text.Trim(), TextCosto.Text.Trim(), TextPorcentaje.Text.Trim(), TextPrecio.Text.Trim())
+            DataGridViewCompra.Columns(0).Width = 40
+            DataGridViewCompra.Columns(1).Width = 80
+            DataGridViewCompra.Columns(2).Width = 20
+            DataGridViewCompra.Columns(3).Width = 20
+            DataGridViewCompra.Columns(4).Width = 20
+            DataGridViewCompra.Columns(5).Width = 20
+            DataGridViewCompra.Columns(6).Width = 20
+            DataGridViewCompra.Columns(7).Width = 50
             DataGridViewCompra.ColumnHeadersVisible = True
             TextCodigoBarra.Clear()
             TextDescripcion.Clear()
             TextCantPeru.Clear()
             TextCantArieta.Clear()
+            TextCantArieta2.Clear()
             TextCosto.Clear()
             TextPrecio.Clear()
             TextPorcentaje.Clear()
@@ -156,6 +166,7 @@ Public Class FormCompra
         Dim campo5 As String
         Dim campo6 As String
         Dim campo7 As String
+        Dim campo8 As String
         For i As Integer = 0 To DataGridViewCompra.Rows.Count - 1
             Dim userModel As New UserModel()
             campo1 = DataGridViewCompra.Rows(i).Cells(0).Value.ToString
@@ -286,6 +297,14 @@ Public Class FormCompra
     Private Sub TextCantArieta_KeyDown(sender As Object, e As KeyEventArgs) Handles TextCantArieta.KeyDown
         Select Case e.KeyData
             Case Keys.Enter
+                TextCantArieta2.Focus()
+                e.SuppressKeyPress = True
+        End Select
+    End Sub
+
+    Private Sub TextCantArieta2_KeyDown(sender As Object, e As KeyEventArgs) Handles TextCantArieta2.KeyDown
+        Select Case e.KeyData
+            Case Keys.Enter
                 TextCosto.Focus()
                 e.SuppressKeyPress = True
         End Select
@@ -303,12 +322,12 @@ Public Class FormCompra
         TextPrecio.Text = DataGridViewBusqueda.CurrentRow.Cells(3).Value.ToString()
     End Sub
     Private Sub DataGridViewCompra_RowsAdded(sender As Object, e As DataGridViewRowsAddedEventArgs) Handles DataGridViewCompra.RowsAdded
-        Dim precioTotal As Double = Sumar(Column4.Name, DataGridViewCompra, Column3.Name, Column7.Name)
+        Dim precioTotal As Double = Sumar(Column4.Name, DataGridViewCompra, Column3.Name, Column7.Name, A3100.Name)
         TotalNum.Text = FormatNumber(precioTotal.ToString(), 2)
     End Sub
 
     Private Sub DataGridViewCompra_RowsRemoved(sender As Object, e As DataGridViewRowsRemovedEventArgs) Handles DataGridViewCompra.RowsRemoved
-        Dim precioTotal As Double = Sumar(Column4.Name, DataGridViewCompra, Column3.Name, Column7.Name)
+        Dim precioTotal As Double = Sumar(Column4.Name, DataGridViewCompra, Column3.Name, Column7.Name, A3100.Name)
         TotalNum.Text = FormatNumber(precioTotal.ToString(), 2)
     End Sub
 
@@ -318,14 +337,14 @@ Public Class FormCompra
 
     Private Function Sumar(
     ByVal nombre_Columna As String,
-    ByVal Dgv As DataGridView, ByVal cantPeru As String, ByVal cantArieta As String) As Double
+    ByVal Dgv As DataGridView, ByVal cantPeru As String, ByVal cantArieta As String, ByVal cantArieta2 As String) As Double
 
         Dim total As Double = 0
 
         ' recorrer las filas y obtener los items de la columna indicada en "nombre_Columna"  
         Try
             For i As Integer = 0 To Dgv.RowCount - 1
-                total = total + CDbl(Dgv.Item(nombre_Columna.ToLower, i).Value) * (CDbl(Dgv.Item(cantPeru.ToLower, i).Value) + CDbl(Dgv.Item(cantArieta.ToLower, i).Value))
+                total = total + CDbl(Dgv.Item(nombre_Columna.ToLower, i).Value) * (CDbl(Dgv.Item(cantPeru.ToLower, i).Value) + CDbl(Dgv.Item(cantArieta.ToLower, i).Value + CDbl(Dgv.Item(cantArieta2.ToLower, i).Value)))
             Next
 
         Catch ex As Exception
@@ -336,6 +355,9 @@ Public Class FormCompra
         Return total
 
     End Function
+
+
+
 
 #End Region
 

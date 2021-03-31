@@ -115,14 +115,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="San Justo Centro Computacion.exe" size="503720">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="San Justo Centro Computacion.exe" size="505768">
       <assemblyIdentity name="San Justo Centro Computacion" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>IGxx97QW90IFpNzvN4mZP5HF/x5LUSGRel61IHMhDio=</dsig:DigestValue>
+        <dsig:DigestValue>XfIlDWFwI+E6ShO+H4allnr2ny4vumtJXU5KuwAkuBg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

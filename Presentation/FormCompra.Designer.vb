@@ -22,14 +22,14 @@ Partial Class FormCompra
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.panelContenedor = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TotalNum = New System.Windows.Forms.Label()
@@ -41,13 +41,6 @@ Partial Class FormCompra
         Me.Busqueda = New System.Windows.Forms.Label()
         Me.DetalleCompra = New System.Windows.Forms.Label()
         Me.DataGridViewCompra = New System.Windows.Forms.DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BotonAgregar = New System.Windows.Forms.Button()
         Me.DataGridViewBusqueda = New System.Windows.Forms.DataGridView()
         Me.Porcentaje = New System.Windows.Forms.Label()
@@ -67,6 +60,16 @@ Partial Class FormCompra
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnClose = New System.Windows.Forms.PictureBox()
         Me.tabla = New System.Data.DataTable()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TextCantArieta2 = New System.Windows.Forms.TextBox()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.A3100 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.panelContenedor.SuspendLayout()
         CType(Me.DataGridViewCompra, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridViewBusqueda, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -78,6 +81,8 @@ Partial Class FormCompra
         'panelContenedor
         '
         Me.panelContenedor.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.panelContenedor.Controls.Add(Me.Label2)
+        Me.panelContenedor.Controls.Add(Me.TextCantArieta2)
         Me.panelContenedor.Controls.Add(Me.Label1)
         Me.panelContenedor.Controls.Add(Me.TotalNum)
         Me.panelContenedor.Controls.Add(Me.CantArieta)
@@ -107,7 +112,7 @@ Partial Class FormCompra
         Me.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panelContenedor.Location = New System.Drawing.Point(0, 0)
         Me.panelContenedor.Name = "panelContenedor"
-        Me.panelContenedor.Size = New System.Drawing.Size(756, 482)
+        Me.panelContenedor.Size = New System.Drawing.Size(812, 482)
         Me.panelContenedor.TabIndex = 0
         '
         'Label1
@@ -137,11 +142,11 @@ Partial Class FormCompra
         Me.CantArieta.AutoSize = True
         Me.CantArieta.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CantArieta.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.CantArieta.Location = New System.Drawing.Point(417, 66)
+        Me.CantArieta.Location = New System.Drawing.Point(419, 66)
         Me.CantArieta.Name = "CantArieta"
         Me.CantArieta.Size = New System.Drawing.Size(39, 16)
         Me.CantArieta.TabIndex = 35
-        Me.CantArieta.Text = "Arieta"
+        Me.CantArieta.Text = "A3300"
         '
         'TextCantArieta
         '
@@ -177,7 +182,7 @@ Partial Class FormCompra
         Me.BotonExportarExcel.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.BotonExportarExcel.Image = Global.Presentation.My.Resources.Resources.application_office_excel_2474
         Me.BotonExportarExcel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BotonExportarExcel.Location = New System.Drawing.Point(442, 427)
+        Me.BotonExportarExcel.Location = New System.Drawing.Point(511, 427)
         Me.BotonExportarExcel.Name = "BotonExportarExcel"
         Me.BotonExportarExcel.Size = New System.Drawing.Size(127, 43)
         Me.BotonExportarExcel.TabIndex = 32
@@ -195,7 +200,7 @@ Partial Class FormCompra
         Me.BotonConfirmar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.BotonConfirmar.Image = Global.Presentation.My.Resources.Resources.bluefilefolder_azul_archivo_12582__2_
         Me.BotonConfirmar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BotonConfirmar.Location = New System.Drawing.Point(591, 426)
+        Me.BotonConfirmar.Location = New System.Drawing.Point(660, 426)
         Me.BotonConfirmar.Name = "BotonConfirmar"
         Me.BotonConfirmar.Size = New System.Drawing.Size(127, 43)
         Me.BotonConfirmar.TabIndex = 31
@@ -233,46 +238,46 @@ Partial Class FormCompra
         Me.DataGridViewCompra.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(84, Byte), Integer))
         Me.DataGridViewCompra.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DataGridViewCompra.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(62, Byte), Integer))
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(62, Byte), Integer))
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewCompra.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(62, Byte), Integer))
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(62, Byte), Integer))
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewCompra.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle9
         Me.DataGridViewCompra.ColumnHeadersHeight = 30
         Me.DataGridViewCompra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.DataGridViewCompra.ColumnHeadersVisible = False
-        Me.DataGridViewCompra.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column7, Me.Column4, Me.Column6, Me.Column5})
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(103, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(62, Byte), Integer))
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridViewCompra.DefaultCellStyle = DataGridViewCellStyle2
+        Me.DataGridViewCompra.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column7, Me.A3100, Me.Column4, Me.Column6, Me.Column5})
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(103, Byte), Integer))
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(62, Byte), Integer))
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridViewCompra.DefaultCellStyle = DataGridViewCellStyle10
         Me.DataGridViewCompra.EnableHeadersVisualStyles = False
         Me.DataGridViewCompra.GridColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(94, Byte), Integer))
         Me.DataGridViewCompra.Location = New System.Drawing.Point(26, 288)
         Me.DataGridViewCompra.Name = "DataGridViewCompra"
         Me.DataGridViewCompra.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(84, Byte), Integer))
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(62, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewCompra.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(84, Byte), Integer))
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(62, Byte), Integer))
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewCompra.RowHeadersDefaultCellStyle = DataGridViewCellStyle11
         Me.DataGridViewCompra.RowHeadersVisible = False
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(84, Byte), Integer))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(62, Byte), Integer))
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White
-        Me.DataGridViewCompra.RowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(84, Byte), Integer))
+        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(62, Byte), Integer))
+        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White
+        Me.DataGridViewCompra.RowsDefaultCellStyle = DataGridViewCellStyle12
         Me.DataGridViewCompra.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         Me.DataGridViewCompra.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(103, Byte), Integer))
         Me.DataGridViewCompra.RowTemplate.DefaultCellStyle.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -280,43 +285,8 @@ Partial Class FormCompra
         Me.DataGridViewCompra.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.DataGridViewCompra.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White
         Me.DataGridViewCompra.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridViewCompra.Size = New System.Drawing.Size(705, 132)
+        Me.DataGridViewCompra.Size = New System.Drawing.Size(761, 132)
         Me.DataGridViewCompra.TabIndex = 28
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "Codigo"
-        Me.Column1.Name = "Column1"
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "Descripcion"
-        Me.Column2.Name = "Column2"
-        '
-        'Column3
-        '
-        Me.Column3.HeaderText = "CantPeru"
-        Me.Column3.Name = "Column3"
-        '
-        'Column7
-        '
-        Me.Column7.HeaderText = "CantArieta"
-        Me.Column7.Name = "Column7"
-        '
-        'Column4
-        '
-        Me.Column4.HeaderText = "Costo"
-        Me.Column4.Name = "Column4"
-        '
-        'Column6
-        '
-        Me.Column6.HeaderText = "Porcentaje"
-        Me.Column6.Name = "Column6"
-        '
-        'Column5
-        '
-        Me.Column5.HeaderText = "Precio"
-        Me.Column5.Name = "Column5"
         '
         'BotonAgregar
         '
@@ -328,10 +298,10 @@ Partial Class FormCompra
         Me.BotonAgregar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.BotonAgregar.Image = Global.Presentation.My.Resources.Resources.logout__1_11
         Me.BotonAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BotonAgregar.Location = New System.Drawing.Point(650, 74)
+        Me.BotonAgregar.Location = New System.Drawing.Point(695, 74)
         Me.BotonAgregar.Name = "BotonAgregar"
         Me.BotonAgregar.Size = New System.Drawing.Size(104, 43)
-        Me.BotonAgregar.TabIndex = 17
+        Me.BotonAgregar.TabIndex = 18
         Me.BotonAgregar.Text = "Agregar"
         Me.BotonAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.BotonAgregar.UseVisualStyleBackColor = True
@@ -345,45 +315,45 @@ Partial Class FormCompra
         Me.DataGridViewBusqueda.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(84, Byte), Integer))
         Me.DataGridViewBusqueda.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DataGridViewBusqueda.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(62, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Century Gothic", 8.0!)
-        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(62, Byte), Integer))
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewBusqueda.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(62, Byte), Integer))
+        DataGridViewCellStyle13.Font = New System.Drawing.Font("Century Gothic", 8.0!)
+        DataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(62, Byte), Integer))
+        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewBusqueda.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle13
         Me.DataGridViewBusqueda.ColumnHeadersHeight = 30
         Me.DataGridViewBusqueda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(103, Byte), Integer))
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(62, Byte), Integer))
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridViewBusqueda.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(103, Byte), Integer))
+        DataGridViewCellStyle14.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(62, Byte), Integer))
+        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridViewBusqueda.DefaultCellStyle = DataGridViewCellStyle14
         Me.DataGridViewBusqueda.EnableHeadersVisualStyles = False
         Me.DataGridViewBusqueda.GridColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(94, Byte), Integer))
         Me.DataGridViewBusqueda.Location = New System.Drawing.Point(26, 134)
         Me.DataGridViewBusqueda.Name = "DataGridViewBusqueda"
         Me.DataGridViewBusqueda.ReadOnly = True
         Me.DataGridViewBusqueda.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(84, Byte), Integer))
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(62, Byte), Integer))
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewBusqueda.RowHeadersDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(84, Byte), Integer))
+        DataGridViewCellStyle15.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(62, Byte), Integer))
+        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewBusqueda.RowHeadersDefaultCellStyle = DataGridViewCellStyle15
         Me.DataGridViewBusqueda.RowHeadersVisible = False
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(84, Byte), Integer))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(62, Byte), Integer))
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White
-        Me.DataGridViewBusqueda.RowsDefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(84, Byte), Integer))
+        DataGridViewCellStyle16.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(62, Byte), Integer))
+        DataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.White
+        Me.DataGridViewBusqueda.RowsDefaultCellStyle = DataGridViewCellStyle16
         Me.DataGridViewBusqueda.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         Me.DataGridViewBusqueda.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(103, Byte), Integer))
         Me.DataGridViewBusqueda.RowTemplate.DefaultCellStyle.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -391,7 +361,7 @@ Partial Class FormCompra
         Me.DataGridViewBusqueda.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.DataGridViewBusqueda.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White
         Me.DataGridViewBusqueda.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridViewBusqueda.Size = New System.Drawing.Size(705, 112)
+        Me.DataGridViewBusqueda.Size = New System.Drawing.Size(761, 112)
         Me.DataGridViewBusqueda.TabIndex = 26
         '
         'Porcentaje
@@ -399,7 +369,7 @@ Partial Class FormCompra
         Me.Porcentaje.AutoSize = True
         Me.Porcentaje.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Porcentaje.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.Porcentaje.Location = New System.Drawing.Point(547, 65)
+        Me.Porcentaje.Location = New System.Drawing.Point(592, 65)
         Me.Porcentaje.Name = "Porcentaje"
         Me.Porcentaje.Size = New System.Drawing.Size(17, 17)
         Me.Porcentaje.TabIndex = 25
@@ -407,10 +377,10 @@ Partial Class FormCompra
         '
         'TextPorcentaje
         '
-        Me.TextPorcentaje.Location = New System.Drawing.Point(536, 85)
+        Me.TextPorcentaje.Location = New System.Drawing.Point(581, 85)
         Me.TextPorcentaje.Name = "TextPorcentaje"
         Me.TextPorcentaje.Size = New System.Drawing.Size(40, 20)
-        Me.TextPorcentaje.TabIndex = 15
+        Me.TextPorcentaje.TabIndex = 16
         '
         'BotonBuscar
         '
@@ -434,7 +404,7 @@ Partial Class FormCompra
         Me.Precio.AutoSize = True
         Me.Precio.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Precio.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.Precio.Location = New System.Drawing.Point(581, 65)
+        Me.Precio.Location = New System.Drawing.Point(626, 65)
         Me.Precio.Name = "Precio"
         Me.Precio.Size = New System.Drawing.Size(46, 17)
         Me.Precio.TabIndex = 19
@@ -442,17 +412,17 @@ Partial Class FormCompra
         '
         'TextPrecio
         '
-        Me.TextPrecio.Location = New System.Drawing.Point(582, 85)
+        Me.TextPrecio.Location = New System.Drawing.Point(627, 85)
         Me.TextPrecio.Name = "TextPrecio"
         Me.TextPrecio.Size = New System.Drawing.Size(63, 20)
-        Me.TextPrecio.TabIndex = 16
+        Me.TextPrecio.TabIndex = 17
         '
         'Costo
         '
         Me.Costo.AutoSize = True
         Me.Costo.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Costo.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.Costo.Location = New System.Drawing.Point(466, 65)
+        Me.Costo.Location = New System.Drawing.Point(511, 65)
         Me.Costo.Name = "Costo"
         Me.Costo.Size = New System.Drawing.Size(43, 17)
         Me.Costo.TabIndex = 17
@@ -460,10 +430,10 @@ Partial Class FormCompra
         '
         'TextCosto
         '
-        Me.TextCosto.Location = New System.Drawing.Point(466, 85)
+        Me.TextCosto.Location = New System.Drawing.Point(511, 85)
         Me.TextCosto.Name = "TextCosto"
         Me.TextCosto.Size = New System.Drawing.Size(64, 20)
-        Me.TextCosto.TabIndex = 14
+        Me.TextCosto.TabIndex = 15
         '
         'CantidadPeru
         '
@@ -527,7 +497,7 @@ Partial Class FormCompra
         Me.PanelBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelBarraTitulo.Location = New System.Drawing.Point(0, 0)
         Me.PanelBarraTitulo.Name = "PanelBarraTitulo"
-        Me.PanelBarraTitulo.Size = New System.Drawing.Size(756, 40)
+        Me.PanelBarraTitulo.Size = New System.Drawing.Size(812, 40)
         Me.PanelBarraTitulo.TabIndex = 9
         '
         'Label3
@@ -546,22 +516,80 @@ Partial Class FormCompra
         Me.btnClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnClose.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnClose.Image = Global.Presentation.My.Resources.Resources.x_close_icon_white
-        Me.btnClose.Location = New System.Drawing.Point(730, 10)
+        Me.btnClose.Location = New System.Drawing.Point(786, 10)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(18, 16)
         Me.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.btnClose.TabIndex = 3
         Me.btnClose.TabStop = False
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ScrollBar
+        Me.Label2.Location = New System.Drawing.Point(465, 66)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(39, 16)
+        Me.Label2.TabIndex = 46
+        Me.Label2.Text = "A3100"
+        '
+        'TextCantArieta2
+        '
+        Me.TextCantArieta2.Location = New System.Drawing.Point(466, 85)
+        Me.TextCantArieta2.Name = "TextCantArieta2"
+        Me.TextCantArieta2.Size = New System.Drawing.Size(40, 20)
+        Me.TextCantArieta2.TabIndex = 14
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "Codigo"
+        Me.Column1.Name = "Column1"
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "Descripcion"
+        Me.Column2.Name = "Column2"
+        '
+        'Column3
+        '
+        Me.Column3.HeaderText = "CantPeru"
+        Me.Column3.Name = "Column3"
+        '
+        'Column7
+        '
+        Me.Column7.HeaderText = "CantArieta"
+        Me.Column7.Name = "Column7"
+        '
+        'A3100
+        '
+        Me.A3100.HeaderText = "A3100"
+        Me.A3100.Name = "A3100"
+        '
+        'Column4
+        '
+        Me.Column4.HeaderText = "Costo"
+        Me.Column4.Name = "Column4"
+        '
+        'Column6
+        '
+        Me.Column6.HeaderText = "Porcentaje"
+        Me.Column6.Name = "Column6"
+        '
+        'Column5
+        '
+        Me.Column5.HeaderText = "Precio"
+        Me.Column5.Name = "Column5"
+        '
         'FormCompra
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(76, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(756, 482)
+        Me.ClientSize = New System.Drawing.Size(812, 482)
         Me.Controls.Add(Me.panelContenedor)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.MaximumSize = New System.Drawing.Size(800, 675)
+        Me.MaximumSize = New System.Drawing.Size(812, 675)
         Me.MinimumSize = New System.Drawing.Size(375, 310)
         Me.Name = "FormCompra"
         Me.Text = "Form2"
@@ -609,14 +637,17 @@ Partial Class FormCompra
     Friend WithEvents BotonLimpiar As Button
     Friend WithEvents CantArieta As Label
     Friend WithEvents TextCantArieta As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents TotalNum As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents TextCantArieta2 As TextBox
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
     Friend WithEvents Column7 As DataGridViewTextBoxColumn
+    Friend WithEvents A3100 As DataGridViewTextBoxColumn
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
     Friend WithEvents Column6 As DataGridViewTextBoxColumn
     Friend WithEvents Column5 As DataGridViewTextBoxColumn
-    Friend WithEvents Label3 As Label
-    Friend WithEvents TotalNum As Label
-    Friend WithEvents Label1 As Label
 End Class
