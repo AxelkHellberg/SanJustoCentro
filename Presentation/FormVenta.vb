@@ -100,9 +100,8 @@ Public Class FormVenta
 #End Region
 
 #Region "Botones"
-    Private Sub BotonClose_Click(sender As Object, e As EventArgs) Handles BotonClose.Click
-        Me.Close()
-    End Sub
+
+
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim userModel As New UserModel()
@@ -720,6 +719,10 @@ Public Class FormVenta
             oDoc = Nothing
         End Try
 
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        Me.Close()
     End Sub
 
 #End Region

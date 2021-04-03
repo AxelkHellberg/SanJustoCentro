@@ -34,6 +34,7 @@ Partial Class FormVenta
         Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormVenta))
         Me.Total = New System.Windows.Forms.Panel()
         Me.TotalVendedor = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -80,8 +81,8 @@ Partial Class FormVenta
         Me.CodigoBarra = New System.Windows.Forms.Label()
         Me.TextCodigoBarra = New System.Windows.Forms.TextBox()
         Me.PanelBarraTitulo = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.BotonClose = New System.Windows.Forms.PictureBox()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.ClienteTableAdapter = New Presentation.sanjusto_centroDataSetTableAdapters.ClienteTableAdapter()
@@ -90,7 +91,7 @@ Partial Class FormVenta
         CType(Me.DataGridViewVenta, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridViewBusqueda, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelBarraTitulo.SuspendLayout()
-        CType(Me.BotonClose, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Total
@@ -779,13 +780,25 @@ Partial Class FormVenta
         'PanelBarraTitulo
         '
         Me.PanelBarraTitulo.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.PanelBarraTitulo.Controls.Add(Me.PictureBox1)
         Me.PanelBarraTitulo.Controls.Add(Me.Label3)
-        Me.PanelBarraTitulo.Controls.Add(Me.BotonClose)
         Me.PanelBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelBarraTitulo.Location = New System.Drawing.Point(0, 0)
         Me.PanelBarraTitulo.Name = "PanelBarraTitulo"
         Me.PanelBarraTitulo.Size = New System.Drawing.Size(932, 40)
         Me.PanelBarraTitulo.TabIndex = 10
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(902, 12)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(18, 16)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 76
+        Me.PictureBox1.TabStop = False
         '
         'Label3
         '
@@ -797,17 +810,6 @@ Partial Class FormVenta
         Me.Label3.Size = New System.Drawing.Size(75, 24)
         Me.Label3.TabIndex = 75
         Me.Label3.Text = "VENTA"
-        '
-        'BotonClose
-        '
-        Me.BotonClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BotonClose.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BotonClose.Location = New System.Drawing.Point(906, 10)
-        Me.BotonClose.Name = "BotonClose"
-        Me.BotonClose.Size = New System.Drawing.Size(18, 16)
-        Me.BotonClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BotonClose.TabIndex = 3
-        Me.BotonClose.TabStop = False
         '
         'BackgroundWorker1
         '
@@ -832,14 +834,13 @@ Partial Class FormVenta
         CType(Me.DataGridViewBusqueda, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelBarraTitulo.ResumeLayout(False)
         Me.PanelBarraTitulo.PerformLayout()
-        CType(Me.BotonClose, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents Total As Panel
     Friend WithEvents PanelBarraTitulo As Panel
-    Friend WithEvents BotonClose As PictureBox
     Friend WithEvents TextCodigoBarra As TextBox
     Friend WithEvents CodigoBarra As Label
     Friend WithEvents TextDescripcion As TextBox
@@ -888,4 +889,5 @@ Partial Class FormVenta
     Friend WithEvents DataGridViewVendedores As DataGridView
     Friend WithEvents TotalVendedor As Label
     Friend WithEvents Label5 As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
