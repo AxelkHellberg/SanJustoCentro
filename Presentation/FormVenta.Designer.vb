@@ -219,8 +219,9 @@ Partial Class FormVenta
         Me.DataGridViewVendedores.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White
         Me.DataGridViewVendedores.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.DataGridViewVendedores.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White
+        Me.DataGridViewVendedores.ScrollBars = System.Windows.Forms.ScrollBars.None
         Me.DataGridViewVendedores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridViewVendedores.Size = New System.Drawing.Size(131, 133)
+        Me.DataGridViewVendedores.Size = New System.Drawing.Size(131, 150)
         Me.DataGridViewVendedores.TabIndex = 71
         '
         'ClienteAsignado
@@ -807,6 +808,9 @@ Partial Class FormVenta
         Me.BotonClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BotonClose.TabIndex = 3
         Me.BotonClose.TabStop = False
+        '
+        'BackgroundWorker1
+        '
         '
         'ClienteTableAdapter
         '

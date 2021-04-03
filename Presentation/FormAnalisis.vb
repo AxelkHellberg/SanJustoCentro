@@ -102,7 +102,7 @@ Public Class FormAnalisis
                 Using command = New SqlCommand()
 
                     command.Connection = connection
-                    If CheckSucursal1.Checked = True And CheckSucursal2.Checked = True Then
+                    If CheckSucursal1.Checked = True And CheckSucursal2.Checked = True And CheckSucursal3.Checked Then
                         command.CommandText = "DECLARE @fec1 smalldatetime
                                            DECLARE @fec2 smalldatetime
                                            SET @fec1 = @fecha1
@@ -112,8 +112,13 @@ Public Class FormAnalisis
                                            WHERE FORMAT(v2.fecha,'yyyy/MM/dd') BETWEEN @fec1 and @fec2
                                            ORDER BY v2.codVenta"
                     Else
-                        If CheckSucursal1.Checked = True Then
-                            command.CommandText = "DECLARE @fec1 smalldatetime
+                        If (CheckSucursal1.Checked = True And CheckSucursal2.Checked = True And CheckSucursal3.Checked = False) Or (CheckSucursal1.Checked = True And CheckSucursal2.Checked = False And CheckSucursal3.Checked = True) Or (CheckSucursal1.Checked = False And CheckSucursal2.Checked = True And CheckSucursal3.Checked = True) Then
+                            DataGridViewBusqueda.Columns.Clear()
+                            MessageBox.Show("Error no puede elegir de a pares.")
+                            Return False
+                        Else
+                            If CheckSucursal1.Checked = True Then
+                                command.CommandText = "DECLARE @fec1 smalldatetime
                                            DECLARE @fec2 smalldatetime
                                            SET @fec1 = @fecha1
                                            SET @fec2 = @fecha2
@@ -121,8 +126,9 @@ Public Class FormAnalisis
                                            FROM Vende v2 INNER JOIN Producto p ON p.codigo=v2.codProd INNER JOIN Venta v1 ON v1.codVenta=v2.codVenta
                                            WHERE v1.sucursal='Peru' and FORMAT(v2.fecha,'yyyy/MM/dd') BETWEEN @fec1 and @fec2
                                             ORDER BY v2.codVenta"
-                        Else
-                            command.CommandText = "DECLARE @fec1 smalldatetime
+                            Else
+                                If CheckSucursal2.Checked = True Then
+                                    command.CommandText = "DECLARE @fec1 smalldatetime
                                            DECLARE @fec2 smalldatetime
                                            SET @fec1 = @fecha1
                                            SET @fec2 = @fecha2
@@ -130,9 +136,55 @@ Public Class FormAnalisis
                                            FROM Vende v2 INNER JOIN Producto p ON p.codigo=v2.codProd INNER JOIN Venta v1 ON v1.codVenta=v2.codVenta
                                            WHERE v1.sucursal='Arieta' and FORMAT(v2.fecha,'yyyy/MM/dd') BETWEEN @fec1 and @fec2
                                             ORDER BY v2.codVenta"
+                                Else
+                                    If CheckSucursal3.Checked = True Then
+                                        command.CommandText = "DECLARE @fec1 smalldatetime
+                                           DECLARE @fec2 smalldatetime
+                                           SET @fec1 = @fecha1
+                                           SET @fec2 = @fecha2
+                                           SELECT v2.codVenta As CodVenta,p.descripcion As Descripcion,v2.codVendedor as Vendedor ,v1.efectivo as Efectivo,v1.tarjeta as Tarjeta,v1.interes as Interes,v1.total as Total,FORMAT(v2.fecha,'dd/MM/yyyy hh:mm:ss tt') as Fecha
+                                           FROM Vende v2 INNER JOIN Producto p ON p.codigo=v2.codProd INNER JOIN Venta v1 ON v1.codVenta=v2.codVenta
+                                           WHERE v1.sucursal='Arieta2' and FORMAT(v2.fecha,'yyyy/MM/dd') BETWEEN @fec1 and @fec2
+                                            ORDER BY v2.codVenta"
+                                    Else
+                                        DataGridViewBusqueda.Columns.Clear()
+                                        Return True
+                                    End If
+                                End If
+                            End If
                         End If
                     End If
-                    command.Parameters.AddWithValue("@fecha2", Format(DateTimePickerHasta.Value.Date, "yyyy/MM/dd"))
+                        'If CheckSucursal1.Checked = True And CheckSucursal2.Checked = True Then
+                        '    command.CommandText = "DECLARE @fec1 smalldatetime
+                        '                       DECLARE @fec2 smalldatetime
+                        '                       SET @fec1 = @fecha1
+                        '                       SET @fec2 = @fecha2
+                        '                       SELECT v2.codVenta As CodVenta,p.descripcion As Descripcion,v2.codVendedor as Vendedor ,v1.efectivo as Efectivo,v1.tarjeta as Tarjeta,v1.interes as Interes,v1.total as Total,FORMAT(v2.fecha,'dd/MM/yyyy hh:mm:ss tt') as Fecha
+                        '                       FROM Vende v2 INNER JOIN Producto p ON p.codigo=v2.codProd INNER JOIN Venta v1 ON v1.codVenta=v2.codVenta
+                        '                       WHERE FORMAT(v2.fecha,'yyyy/MM/dd') BETWEEN @fec1 and @fec2
+                        '                       ORDER BY v2.codVenta"
+                        'Else
+                        '    If CheckSucursal1.Checked = True Then
+                        '        command.CommandText = "DECLARE @fec1 smalldatetime
+                        '                       DECLARE @fec2 smalldatetime
+                        '                       SET @fec1 = @fecha1
+                        '                       SET @fec2 = @fecha2
+                        '                       SELECT v2.codVenta As CodVenta,p.descripcion As Descripcion,v2.codVendedor as Vendedor ,v1.efectivo as Efectivo,v1.tarjeta as Tarjeta,v1.interes as Interes,v1.total as Total,FORMAT(v2.fecha,'dd/MM/yyyy hh:mm:ss tt') as Fecha
+                        '                       FROM Vende v2 INNER JOIN Producto p ON p.codigo=v2.codProd INNER JOIN Venta v1 ON v1.codVenta=v2.codVenta
+                        '                       WHERE v1.sucursal='Peru' and FORMAT(v2.fecha,'yyyy/MM/dd') BETWEEN @fec1 and @fec2
+                        '                        ORDER BY v2.codVenta"
+                        '    Else
+                        '        command.CommandText = "DECLARE @fec1 smalldatetime
+                        '                       DECLARE @fec2 smalldatetime
+                        '                       SET @fec1 = @fecha1
+                        '                       SET @fec2 = @fecha2
+                        '                       SELECT v2.codVenta As CodVenta,p.descripcion As Descripcion,v2.codVendedor as Vendedor ,v1.efectivo as Efectivo,v1.tarjeta as Tarjeta,v1.interes as Interes,v1.total as Total,FORMAT(v2.fecha,'dd/MM/yyyy hh:mm:ss tt') as Fecha
+                        '                       FROM Vende v2 INNER JOIN Producto p ON p.codigo=v2.codProd INNER JOIN Venta v1 ON v1.codVenta=v2.codVenta
+                        '                       WHERE v1.sucursal='Arieta' and FORMAT(v2.fecha,'yyyy/MM/dd') BETWEEN @fec1 and @fec2
+                        '                        ORDER BY v2.codVenta"
+                        '    End If
+                        'End If
+                        command.Parameters.AddWithValue("@fecha2", Format(DateTimePickerHasta.Value.Date, "yyyy/MM/dd"))
                     command.Parameters.AddWithValue("@fecha1", Format(DateTimePickerDesde.Value.Date, "yyyy/MM/dd"))
                     command.CommandType = CommandType.Text
 
@@ -251,16 +303,16 @@ Public Class FormAnalisis
             connection.Open()
             Using command = New SqlCommand()
                 command.Connection = connection
-                If CheckSucursal1.Checked = True And CheckSucursal2.Checked = True Then
+                If CheckSucursal3.Checked = True And CheckSucursal1.Checked = False And CheckSucursal2.Checked = False Then
                     command.CommandText = "DECLARE @fec1 smalldatetime
-                                           DECLARE @fec2 smalldatetime
-                                           SET @fec1 = @fecha1
-                                           SET @fec2 = @fecha2
-                                            SELECT descripcion As Descripcion,FORMAT(fecha,'hh:mm:ss tt') As Fecha,total As Pago,desde as Desde,sucursal as Sucursal
-                                           FROM Pago p
-                                           WHERE FORMAT(p.fecha,'yyyy/MM/dd') BETWEEN @fec1 and @fec2"
+                                               DECLARE @fec2 smalldatetime
+                                               SET @fec1 = @fecha1
+                                               SET @fec2 = @fecha2
+                                               SELECT descripcion As Descripcion,FORMAT(fecha,'hh:mm:ss tt') As Fecha,total As Pago,desde as Desde,sucursal as Sucursal 
+                                               FROM Pago p
+                                               WHERE sucursal='Arieta2' and FORMAT(p.fecha,'yyyy/MM/dd') BETWEEN @fec1 and @fec2"
                 Else
-                    If CheckSucursal1.Checked = True Then
+                    If CheckSucursal1.Checked = True And CheckSucursal2.Checked = False Then
                         command.CommandText = "DECLARE @fec1 smalldatetime
                                                DECLARE @fec2 smalldatetime
                                                SET @fec1 = @fecha1
@@ -269,15 +321,47 @@ Public Class FormAnalisis
                                                FROM Pago p
                                                WHERE sucursal='Peru' and FORMAT(p.fecha,'yyyy/MM/dd') BETWEEN @fec1 and @fec2"
                     Else
-                        command.CommandText = "DECLARE @fec1 smalldatetime
+                        If CheckSucursal2.Checked = True And CheckSucursal1.Checked = False And CheckSucursal3.Checked = False Then
+                            command.CommandText = "DECLARE @fec1 smalldatetime
                                            DECLARE @fec2 smalldatetime
                                            SET @fec1 = @fecha1
                                            SET @fec2 = @fecha2
                                            SELECT descripcion As Descripcion,FORMAT(fecha,'hh:mm:ss tt') As Fecha,total As Pago,desde as Desde,sucursal as Sucursal 
                                            FROM Pago p
                                            WHERE sucursal='Arieta' and FORMAT(p.fecha,'yyyy/MM/dd') BETWEEN @fec1 and @fec2"
+                        Else
+                            MessageBox.Show("Error, unicamente se puede elegir de a una sucursal.")
+                            Exit Sub
+                        End If
                     End If
                 End If
+                'If CheckSucursal1.Checked = True And CheckSucursal2.Checked = True Then
+                '    command.CommandText = "DECLARE @fec1 smalldatetime
+                '                           DECLARE @fec2 smalldatetime
+                '                           SET @fec1 = @fecha1
+                '                           SET @fec2 = @fecha2
+                '                            SELECT descripcion As Descripcion,FORMAT(fecha,'hh:mm:ss tt') As Fecha,total As Pago,desde as Desde,sucursal as Sucursal
+                '                           FROM Pago p
+                '                           WHERE FORMAT(p.fecha,'yyyy/MM/dd') BETWEEN @fec1 and @fec2"
+                'Else
+                '    If CheckSucursal1.Checked = True Then
+                '        command.CommandText = "DECLARE @fec1 smalldatetime
+                '                               DECLARE @fec2 smalldatetime
+                '                               SET @fec1 = @fecha1
+                '                               SET @fec2 = @fecha2
+                '                               SELECT descripcion As Descripcion,FORMAT(fecha,'hh:mm:ss tt') As Fecha,total As Pago,desde as Desde,sucursal as Sucursal 
+                '                               FROM Pago p
+                '                               WHERE sucursal='Peru' and FORMAT(p.fecha,'yyyy/MM/dd') BETWEEN @fec1 and @fec2"
+                '    Else
+                '        command.CommandText = "DECLARE @fec1 smalldatetime
+                '                           DECLARE @fec2 smalldatetime
+                '                           SET @fec1 = @fecha1
+                '                           SET @fec2 = @fecha2
+                '                           SELECT descripcion As Descripcion,FORMAT(fecha,'hh:mm:ss tt') As Fecha,total As Pago,desde as Desde,sucursal as Sucursal 
+                '                           FROM Pago p
+                '                           WHERE sucursal='Arieta' and FORMAT(p.fecha,'yyyy/MM/dd') BETWEEN @fec1 and @fec2"
+                '    End If
+                'End If
                 command.Parameters.AddWithValue("@fecha2", Format(DateTimePickerHasta.Value.Date, "yyyy/MM/dd"))
                 command.Parameters.AddWithValue("@fecha1", Format(DateTimePickerDesde.Value.Date, "yyyy/MM/dd"))
                 command.CommandType = CommandType.Text

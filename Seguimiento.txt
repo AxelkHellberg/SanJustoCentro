@@ -1,5 +1,1 @@
-PROBAR SI FUNCIONA EN EL DIA EL TOTAL DE LOS VENDEDORES COMPARANDO CON LA APLICACION DESPLEGADA.
-
-VER QUE MAS FALTA ARREGLAR DE FORM VENTA
-
-COMENZAR EL AGREGADO DE 3ER SUCURSAL
+Controlar que al hacer un pago desde Arieta o Arieta2 en lo VISUAL solo actua sobre TesoroCentral, pero en DB se cambia bien.

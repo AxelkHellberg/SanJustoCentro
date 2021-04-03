@@ -92,7 +92,7 @@ Public Class FormCompra
                     End If
                 Else
 
-                    command.CommandText = "select odigo as Codigo,descripcion as Descripcion,costo as Costo,precio as Precio,stockPeru as 'Stock Peru',stockArieta as 'Stock A3300',stockArieta2 as 'Stock A3100',porcentaje as '%%' FROM Producto WHERE codigo LIKE '%'+@cod+'%'"
+                    command.CommandText = "select codigo as Codigo,descripcion as Descripcion,costo as Costo,precio as Precio,stockPeru as 'Stock Peru',stockArieta as 'Stock A3300',stockArieta2 as 'Stock A3100',porcentaje as '%%' FROM Producto WHERE codigo LIKE '%'+@cod+'%'"
                     command.Parameters.AddWithValue("@cod", TextCodigoBarra.Text)
                     command.CommandType = CommandType.Text
 
@@ -173,11 +173,12 @@ Public Class FormCompra
             campo2 = DataGridViewCompra.Rows(i).Cells(1).Value.ToString
             campo3 = DataGridViewCompra.Rows(i).Cells(2).Value.ToString
             campo4 = DataGridViewCompra.Rows(i).Cells(3).Value.ToString
-            campo5 = DataGridViewCompra.Rows(i).Cells(4).Value.ToString
-            campo6 = DataGridViewCompra.Rows(i).Cells(5).Value.ToString
-            campo7 = DataGridViewCompra.Rows(i).Cells(6).Value.ToString
+            campo8 = DataGridViewCompra.Rows(i).Cells(4).Value.ToString
+            campo5 = DataGridViewCompra.Rows(i).Cells(5).Value.ToString
+            campo6 = DataGridViewCompra.Rows(i).Cells(6).Value.ToString
+            campo7 = DataGridViewCompra.Rows(i).Cells(7).Value.ToString
 
-            Dim valid = userModel.ComprarProductos(campo1, campo2, campo3, campo4, campo5, campo6, campo7)
+            Dim valid = userModel.ComprarProductos(campo1, campo2, campo3, campo4, campo5, campo6, campo7, campo8)
 
             If valid = False Then
                 MessageBox.Show("Error al acumular el producto" + vbNewLine + "Por favor, intente nuevamente.")

@@ -29,7 +29,7 @@ Public Class UserDao
         End Using
     End Function
 
-    Public Function InsertarProducto(codigo As String, desc As String, cantP As Integer, cantA As Integer, costo As Single, porcentaje As Single, precio As Single) As Boolean
+    Public Function InsertarProducto(codigo As String, desc As String, cantP As Integer, cantA As Integer, costo As Single, porcentaje As Single, precio As Single, cantA2 As Integer) As Boolean
 
 
         Using connection = GetConnection()
@@ -37,11 +37,12 @@ Public Class UserDao
             Using command = New SqlCommand()
 
                 command.Connection = connection
-                command.CommandText = "BEGIN Try BEGIN TRANSACTION INSERT INTO Producto VALUES (@cod,@desc,@costo,@precio,@cantP,@cantA,@porcentaje) COMMIT TRANSACTION; End Try BEGIN Catch ROLLBACK TRANSACTION; End Catch;"
+                command.CommandText = "BEGIN Try BEGIN TRANSACTION INSERT INTO Producto VALUES (@cod,@desc,@costo,@precio,@cantP,@cantA,@porcentaje,@cantA2) COMMIT TRANSACTION; End Try BEGIN Catch ROLLBACK TRANSACTION; End Catch;"
                 command.Parameters.AddWithValue("@cod", codigo)
                 command.Parameters.AddWithValue("@desc", desc)
                 command.Parameters.AddWithValue("@cantP", cantP)
                 command.Parameters.AddWithValue("@cantA", cantA)
+                command.Parameters.AddWithValue("@cantA2", cantA2)
                 command.Parameters.AddWithValue("@costo", costo)
                 command.Parameters.AddWithValue("@porcentaje", porcentaje)
                 command.Parameters.AddWithValue("@precio", precio)
@@ -58,15 +59,16 @@ Public Class UserDao
 
     End Function
 
-    Public Function AcumularProducto(codigo As String, cantP As Integer, cantA As Integer, costo As Single, porcentaje As Single, precio As Single) As Boolean
+    Public Function AcumularProducto(codigo As String, cantP As Integer, cantA As Integer, costo As Single, porcentaje As Single, precio As Single, cantA2 As Integer) As Boolean
         Using connection = GetConnection()
             connection.Open()
             Using command = New SqlCommand()
                 command.Connection = connection
-                command.CommandText = "BEGIN Try BEGIN TRANSACTION UPDATE Producto SET stockPeru+=@cantP,stockArieta+=@cantA,costo=@costo,precio=@precio,porcentaje=@porcentaje WHERE codigo=@codigo COMMIT TRANSACTION; End Try BEGIN Catch ROLLBACK TRANSACTION; End Catch;"
+                command.CommandText = "BEGIN Try BEGIN TRANSACTION UPDATE Producto SET stockPeru+=@cantP,stockArieta+=@cantA,stockArieta2+=@cantA2,costo=@costo,precio=@precio,porcentaje=@porcentaje WHERE codigo=@codigo COMMIT TRANSACTION; End Try BEGIN Catch ROLLBACK TRANSACTION; End Catch;"
                 command.Parameters.AddWithValue("@codigo", codigo)
                 command.Parameters.AddWithValue("@cantP", cantP)
                 command.Parameters.AddWithValue("@cantA", cantA)
+                command.Parameters.AddWithValue("@cantA2", cantA2)
                 command.Parameters.AddWithValue("@costo", costo)
                 command.Parameters.AddWithValue("@porcentaje", porcentaje)
                 command.Parameters.AddWithValue("@precio", precio)
@@ -81,7 +83,7 @@ Public Class UserDao
         End Using
     End Function
 
-    Public Function ComprarProductosUserDao(codigo As String, desc As String, cantP As Integer, cantA As Integer, costo As Single, porcentaje As Single, precio As Single) As Boolean
+    Public Function ComprarProductosUserDao(codigo As String, desc As String, cantP As Integer, cantA As Integer, costo As Single, porcentaje As Single, precio As Single, cantA2 As Integer) As Boolean
         Using connection = GetConnection()
             connection.Open()
             Using command = New SqlCommand()
@@ -93,9 +95,9 @@ Public Class UserDao
                 rd = command.ExecuteReader()
                 If rd.HasRows Then
                     rd.Dispose()
-                    Return AcumularProducto(codigo, cantP, cantA, costo, porcentaje, precio)
+                    Return AcumularProducto(codigo, cantP, cantA, costo, porcentaje, precio, cantA2)
                 Else
-                    Return InsertarProducto(codigo, desc, cantP, cantA, costo, porcentaje, precio)
+                    Return InsertarProducto(codigo, desc, cantP, cantA, costo, porcentaje, precio, cantA2)
                 End If
             End Using
         End Using
@@ -142,7 +144,15 @@ Public Class UserDao
             Using command = New SqlCommand()
                 command.Connection = connection
                 command.CommandText = "BEGIN Try BEGIN TRANSACTION insert into Venta (sucursal,total,efectivo,tarjeta,ajuste,interes) values(@sucu,@total,@efectivo,@tarjeta,@ajuste,@interes) insert into Confirmacion (sucursal,total,efectivo,tarjeta,ajuste,interes) values(@sucu,@total,@efectivo,@tarjeta,@ajuste,@interes) COMMIT TRANSACTION; End Try BEGIN Catch ROLLBACK TRANSACTION; End Catch;"
-                command.Parameters.AddWithValue("@sucu", sucursalPA)
+                If sucursalPA = "Peru" Then
+                    command.Parameters.AddWithValue("@sucu", sucursalPA)
+                Else
+                    If sucursalAltura = "3100" Then
+                        command.Parameters.AddWithValue("@sucu", "Arieta2")
+                    Else
+                        command.Parameters.AddWithValue("@sucu", "Arieta")
+                    End If
+                End If
                 command.Parameters.AddWithValue("@total", total)
                 command.Parameters.AddWithValue("@efectivo", efectivo)
                 command.Parameters.AddWithValue("@tarjeta", tarjeta)
@@ -166,7 +176,15 @@ Public Class UserDao
             connection.Open()
             Using command = New SqlCommand()
                 command.Connection = connection
-                command.CommandText = "BEGIN TRY BEGIN TRANSACTION UPDATE Caja SET total+=@total,efectivo+=@efectivo,tarjeta+=@tarjeta WHERE sucursal=@sucu  DELETE FROM Confirmacion WHERE codVenta=@codVenta COMMIT TRANSACTION; END TRY BEGIN CATCH ROLLBACK TRANSACTION; END CATCH;"
+                If sucursalPA = "Peru" Then
+                    command.CommandText = "BEGIN TRY BEGIN TRANSACTION UPDATE Caja SET total+=@total,efectivo+=@efectivo,tarjeta+=@tarjeta WHERE sucursal=@sucu  DELETE FROM Confirmacion WHERE codVenta=@codVenta COMMIT TRANSACTION; END TRY BEGIN CATCH ROLLBACK TRANSACTION; END CATCH;"
+                Else
+                    If sucursalAltura = "3100" Then
+                        command.CommandText = "BEGIN TRY BEGIN TRANSACTION UPDATE Caja SET total+=@total,efectivo+=@efectivo,tarjeta+=@tarjeta WHERE sucursal='Arieta2'  DELETE FROM Confirmacion WHERE codVenta=@codVenta COMMIT TRANSACTION; END TRY BEGIN CATCH ROLLBACK TRANSACTION; END CATCH;"
+                    Else
+                        command.CommandText = "BEGIN TRY BEGIN TRANSACTION UPDATE Caja SET total+=@total,efectivo+=@efectivo,tarjeta+=@tarjeta WHERE sucursal=@sucu  DELETE FROM Confirmacion WHERE codVenta=@codVenta COMMIT TRANSACTION; END TRY BEGIN CATCH ROLLBACK TRANSACTION; END CATCH;"
+                    End If
+                End If
                 command.Parameters.AddWithValue("@sucu", sucursalPA)
                 command.Parameters.AddWithValue("@total", total)
                 command.Parameters.AddWithValue("@efectivo", efectivo)
@@ -189,14 +207,25 @@ Public Class UserDao
             connection.Open()
             Using command = New SqlCommand()
                 command.Connection = connection
-                command.CommandText = "BEGIN TRY BEGIN TRANSACTION UPDATE Caja SET total+=@total,efectivo+=@efectivo,tarjeta+=@tarjeta WHERE sucursal=@sucu UPDATE Cliente SET Deuda-=@descontar where codCliente=@codCli COMMIT TRANSACTION; END TRY BEGIN CATCH ROLLBACK TRANSACTION; END CATCH;"
-                command.Parameters.AddWithValue("@sucu", sucursalPA)
+                command.CommandText = "BEGIN TRY BEGIN TRANSACTION UPDATE Cliente SET Deuda-=@descontar where codCliente=@codCli COMMIT TRANSACTION; END TRY BEGIN CATCH ROLLBACK TRANSACTION; END CATCH;"
+                If sucursalPA = "Peru" Then
+                    command.Parameters.AddWithValue("@sucu", sucursalPA)
+                Else
+                    If sucursalAltura = "3100" Then
+                        command.Parameters.AddWithValue("@sucu", "Arieta2")
+                    Else
+                        command.Parameters.AddWithValue("@sucu", sucursalPA)
+
+                    End If
+                End If
                 command.Parameters.AddWithValue("@total", total)
                 command.Parameters.AddWithValue("@descontar", descontar)
                 command.Parameters.AddWithValue("@codCli", codCli)
                 command.Parameters.AddWithValue("@efectivo", efectivo)
                 command.Parameters.AddWithValue("@tarjeta", tarjeta)
                 Dim rd As SqlDataReader
+                rd = command.ExecuteReader()
+                command.CommandText = "BEGIN TRY BEGIN TRANSACTION UPDATE Caja SET total+=@total,efectivo+=@efectivo,tarjeta+=@tarjeta WHERE sucursal=@sucu COMMIT TRANSACTION; END TRY BEGIN CATCH ROLLBACK TRANSACTION; END CATCH;"
                 rd = command.ExecuteReader()
                 rd.Dispose()
                 'command.CommandText = "DELETE FROM Confirmacion WHERE codVenta=@codVenta"
@@ -214,7 +243,16 @@ Public Class UserDao
             Using command = New SqlCommand()
                 command.Connection = connection
                 command.CommandText = "BEGIN Try BEGIN TRANSACTION UPDATE Caja SET efectivo-=@pago WHERE sucursal=@sucu INSERT INTO Pago (descripcion,total,fecha,sucursal,desde) values(@desc,@pago,sanjusto_sanjusto.DevolverFecha(),@sucu,'Caja') COMMIT TRANSACTION; End Try BEGIN Catch ROLLBACK TRANSACTION; End Catch;"
-                command.Parameters.AddWithValue("@sucu", sucursal)
+                If sucursalPA = "Peru" Then
+                    command.Parameters.AddWithValue("@sucu", sucursalPA)
+                Else
+                    If sucursalAltura = "3100" Then
+                        command.Parameters.AddWithValue("@sucu", "Arieta2")
+                    Else
+                        command.Parameters.AddWithValue("@sucu", sucursalPA)
+
+                    End If
+                End If
                 command.Parameters.AddWithValue("@pago", pago)
                 command.Parameters.AddWithValue("@desc", descripcion)
                 Dim rd As SqlDataReader
@@ -245,7 +283,7 @@ Public Class UserDao
                         command.CommandText = "BEGIN Try BEGIN TRANSACTION UPDATE Tesoro SET efectivo-=@pago WHERE sucursal='Arieta' INSERT INTO Pago (descripcion,total,fecha,sucursal,desde) values(@desc,@pago,sanjusto_sanjusto.DevolverFecha(),'A3300','Tesoro ARIETA 3300') COMMIT TRANSACTION; End Try BEGIN Catch ROLLBACK TRANSACTION; End Catch;"
                     End If
                 Else
-                    command.CommandText = "BEGIN Try BEGIN TRANSACTION UPDATE Tesoro SET efectivo-=@pago WHERE sucursal=@sucu INSERT INTO Pago (descripcion,total,fecha,sucursal,desde) values(@desc,@pago,sanjusto_sanjusto.DevolverFecha(),'Peru','Tesoro PERU') COMMIT TRANSACTION; End Try BEGIN Catch ROLLBACK TRANSACTION; End Catch;"
+                    command.CommandText = "BEGIN Try BEGIN TRANSACTION UPDATE Tesoro SET efectivo-=@pago WHERE sucursal='Peru' INSERT INTO Pago (descripcion,total,fecha,sucursal,desde) values(@desc,@pago,sanjusto_sanjusto.DevolverFecha(),'Peru','Tesoro PERU') COMMIT TRANSACTION; End Try BEGIN Catch ROLLBACK TRANSACTION; End Catch;"
                 End If
                 Dim rd As SqlDataReader
                 rd = command.ExecuteReader()
@@ -267,7 +305,16 @@ Public Class UserDao
             Using command = New SqlCommand()
                 command.Connection = connection
                 command.CommandText = "BEGIN Try BEGIN TRANSACTION UPDATE Caja SET total=0,efectivo=0,tarjeta=0 WHERE sucursal=@sucu UPDATE Tesoro SET efectivo+=@total WHERE sucursal=@sucu COMMIT TRANSACTION; End Try BEGIN Catch ROLLBACK TRANSACTION; End Catch;"
-                command.Parameters.AddWithValue("@sucu", sucursalPA)
+                If sucursalPA = "Peru" Then
+                    command.Parameters.AddWithValue("@sucu", sucursalPA)
+                Else
+                    If sucursalAltura = "3100" Then
+                        command.Parameters.AddWithValue("@sucu", "Arieta2")
+                    Else
+                        command.Parameters.AddWithValue("@sucu", sucursalPA)
+
+                    End If
+                End If
                 command.Parameters.AddWithValue("@total", efectivo)
                 Dim rd As SqlDataReader
                 rd = command.ExecuteReader()
@@ -308,7 +355,16 @@ Public Class UserDao
                 command.Connection = connection
                 command.CommandText = "BEGIN Try BEGIN TRANSACTION INSERT INTO Pago (descripcion,total,fecha,sucursal,desde) VALUES('RETIRO',@total,sanjusto_sanjusto.DevolverFecha(),@sucu,'Caja') UPDATE Caja SET efectivo-=@total WHERE sucursal=@sucu  UPDATE Tesoro SET efectivo+=@total WHERE sucursal=@sucu COMMIT TRANSACTION; End Try BEGIN Catch ROLLBACK TRANSACTION; End Catch;"
                 command.Parameters.AddWithValue("@total", efectivo)
-                command.Parameters.AddWithValue("@sucu", sucursalPA)
+                If sucursalPA = "Peru" Then
+                    command.Parameters.AddWithValue("@sucu", sucursalPA)
+                Else
+                    If sucursalAltura = "3100" Then
+                        command.Parameters.AddWithValue("@sucu", "Arieta2")
+                    Else
+                        command.Parameters.AddWithValue("@sucu", sucursalPA)
+
+                    End If
+                End If
                 Dim rd As SqlDataReader
                 rd = command.ExecuteReader()
                 rd.Dispose()
@@ -380,7 +436,16 @@ Public Class UserDao
                 command.CommandText = "BEGIN Try BEGIN TRANSACTION UPDATE Cliente SET Deuda+=@total where nombre=@nombre insert into Venta (sucursal,total,efectivo,tarjeta,ajuste,interes) values(@sucu,@total,@efectivo,@tarjeta,@ajuste,@interes) insert into Confirmacion (sucursal,total,efectivo,tarjeta,ajuste,interes) values(@sucu,@total,@efectivo,@tarjeta,@ajuste,@interes) COMMIT TRANSACTION; End Try BEGIN Catch ROLLBACK TRANSACTION; End Catch;"
                 command.Parameters.AddWithValue("@nombre", nombre)
                 command.Parameters.AddWithValue("@total", total)
-                command.Parameters.AddWithValue("@sucu", sucursalPA)
+                If sucursalPA = "Peru" Then
+                    command.Parameters.AddWithValue("@sucu", sucursalPA)
+                Else
+                    If sucursalAltura = "3100" Then
+                        command.Parameters.AddWithValue("@sucu", "Arieta2")
+                    Else
+                        command.Parameters.AddWithValue("@sucu", sucursalPA)
+
+                    End If
+                End If
                 command.Parameters.AddWithValue("@efectivo", efectivo)
                 command.Parameters.AddWithValue("@tarjeta", tarjeta)
                 command.Parameters.AddWithValue("@ajuste", ajuste)

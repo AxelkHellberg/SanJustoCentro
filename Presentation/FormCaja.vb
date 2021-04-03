@@ -79,7 +79,16 @@ Public Class FormCaja
                 command.Connection = connection
 
                 command.CommandText = "SELECT total From Caja WHERE sucursal=@sucu"
-                command.Parameters.AddWithValue("@sucu", sucursalPA)
+                If sucursalPA = "Peru" Then
+                    command.Parameters.AddWithValue("@sucu", sucursalPA)
+                Else
+                    If sucursalAltura = "3100" Then
+                        command.Parameters.AddWithValue("@sucu", "Arieta2")
+                    Else
+                        command.Parameters.AddWithValue("@sucu", sucursalPA)
+
+                    End If
+                End If
                 command.CommandType = CommandType.Text
                 TotalTotal.Text = FormatNumber(command.ExecuteScalar(), 0)
                 command.CommandText = "SELECT efectivo From Caja WHERE sucursal=@sucu"
@@ -100,8 +109,11 @@ Public Class FormCaja
             connection.Open()
             Using command = New SqlCommand()
                 command.Connection = connection
-
-                command.CommandText = "SELECT distinct v.codVenta as Codigo,codVendedor as Vendedor, total as Total, efectivo As Efectivo, tarjeta As Tarjeta,interes as Interes, FORMAT(fecha,'hh:mm:ss tt') as Hora, ajuste as Ajuste FROM Confirmacion v INNER JOIN Vende ven ON v.codVenta=ven.codVenta WHERE sucursal=@sucu"
+                If sucursalPA <> "Peru" And sucursalAltura = "3100" Then
+                    command.CommandText = "SELECT distinct v.codVenta as Codigo,codVendedor as Vendedor, total as Total, efectivo As Efectivo, tarjeta As Tarjeta,interes as Interes, FORMAT(fecha,'hh:mm:ss tt') as Hora, ajuste as Ajuste FROM Confirmacion v INNER JOIN Vende ven ON v.codVenta=ven.codVenta WHERE sucursal='Arieta2'"
+                Else
+                    command.CommandText = "SELECT distinct v.codVenta as Codigo,codVendedor as Vendedor, total as Total, efectivo As Efectivo, tarjeta As Tarjeta,interes as Interes, FORMAT(fecha,'hh:mm:ss tt') as Hora, ajuste as Ajuste FROM Confirmacion v INNER JOIN Vende ven ON v.codVenta=ven.codVenta WHERE sucursal=@sucu"
+                End If
                 command.Parameters.AddWithValue("@sucu", sucursalPA)
                 command.CommandType = CommandType.Text
 

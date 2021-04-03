@@ -170,7 +170,7 @@ Public Class FormVenta
         If String.IsNullOrEmpty(TextCodigoBarra.Text) Or String.IsNullOrEmpty(TextCant.Text) Or String.IsNullOrEmpty(TextDescripcion.Text) Then
             MessageBox.Show("Error en el relleno de campos.")
         Else
-            DataGridViewVenta.Rows.Add(TextCodigoBarra.Text.Trim(), TextDescripcion.Text.Trim(), TextCant.Text.Trim(), DataGridViewBusqueda.CurrentRow.Cells(4).Value.ToString())
+            DataGridViewVenta.Rows.Add(TextCodigoBarra.Text.Trim(), TextDescripcion.Text.Trim(), TextCant.Text.Trim(), DataGridViewBusqueda.CurrentRow.Cells(5).Value.ToString())
             DataGridViewVenta.ColumnHeadersVisible = True
             TextCodigoBarra.Clear()
             TextDescripcion.Clear()
