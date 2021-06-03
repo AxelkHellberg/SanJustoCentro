@@ -46,3 +46,15 @@ C:\Users\axel\Desktop\SanJustoCentro\DataAccess\obj\Debug\netstandard2.0\DataAcc
 C:\Users\axel\Desktop\SanJustoCentro\DataAccess\obj\Debug\netstandard2.0\DataAccess.vbproj.CopyComplete
 C:\Users\axel\Desktop\SanJustoCentro\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
 C:\Users\axel\Desktop\SanJustoCentro\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\DataAccess\obj\Debug\netstandard2.0\DataAccess.vbproj.AssemblyReference.cache
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.vb
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\DataAccess\obj\Debug\netstandard2.0\DataAccess.vbproj.CoreCompileInputs.cache
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\DataAccess\bin\Debug\netstandard2.0\DataAccess.deps.json
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\DataAccess\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\DataAccess\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\DataAccess\bin\Debug\netstandard2.0\CapaComun.dll
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\DataAccess\bin\Debug\netstandard2.0\CapaComun.pdb
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\DataAccess\obj\Debug\netstandard2.0\DataAccess.vbproj.CopyComplete

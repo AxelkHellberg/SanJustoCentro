@@ -34,3 +34,12 @@ C:\Users\axel\Desktop\SanJustoCentro\CapaComun\obj\Debug\netstandard2.0\CapaComu
 C:\Users\axel\Desktop\SanJustoCentro\CapaComun\obj\Debug\netstandard2.0\CapaComun.vbproj.CoreCompileInputs.cache
 C:\Users\axel\Desktop\SanJustoCentro\CapaComun\obj\Debug\netstandard2.0\CapaComun.dll
 C:\Users\axel\Desktop\SanJustoCentro\CapaComun\obj\Debug\netstandard2.0\CapaComun.pdb
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\CapaComun\obj\Debug\netstandard2.0\CapaComun.dll
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\CapaComun\obj\Debug\netstandard2.0\CapaComun.pdb
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\CapaComun\bin\Debug\netstandard2.0\CapaComun.deps.json
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\CapaComun\bin\Debug\netstandard2.0\CapaComun.dll
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\CapaComun\bin\Debug\netstandard2.0\CapaComun.pdb
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\CapaComun\obj\Debug\netstandard2.0\CapaComun.AssemblyInfoInputs.cache
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\CapaComun\obj\Debug\netstandard2.0\CapaComun.AssemblyInfo.vb
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\CapaComun\obj\Debug\netstandard2.0\CapaComun.vbproj.CoreCompileInputs.cache
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\CapaComun\obj\Debug\netstandard2.0\CapaComun.vbproj.AssemblyReference.cache

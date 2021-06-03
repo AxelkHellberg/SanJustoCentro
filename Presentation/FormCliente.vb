@@ -73,6 +73,7 @@ Public Class FormCobranzas
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BotonBuscar.Click
         Dim userModel As New UserModel()
+        DataGridViewProductos.Columns.Clear()
         Using connection = GetConnection()
             connection.Open()
             Using command = New SqlCommand()
@@ -202,7 +203,7 @@ Public Class FormCobranzas
         Dim efectivo As Double
         Dim tarjeta As Double
         Dim debito As Double
-        If Not String.IsNullOrEmpty(TextTarjeta.Text) Then
+        If Not String.IsNullOrEmpty(TextEfectivo.Text) Then
             efectivo = TextEfectivo.Text
         Else
             efectivo = 0
@@ -235,5 +236,40 @@ Public Class FormCobranzas
 
     End Sub
 
+    Private Sub DataGridViewBusqueda_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewBusqueda.CellDoubleClick
+        Dim userModel As New UserModel()
+        Using connection = GetConnection()
+            connection.Open()
+            Using command = New SqlCommand()
+                command.Connection = connection
+
+                command.CommandText = "SELECT c.fechaCompra as Fecha,p.descripcion as Producto, c.cant as Cantidad, precioProducto As 'Precio unitario' FROM ClienteRetiroProducto c INNER JOIN Producto p ON c.codProd=p.codigo WHERE c.codCliente=@cliente"
+                command.Parameters.AddWithValue("@cliente", TextCliente.Text)
+                command.CommandType = CommandType.Text
+
+
+                Dim da2 As New SqlDataAdapter(command)
+                Dim tabla As New DataTable
+
+                If da2.Fill(tabla) <> 0 Then
+
+                    DataGridViewProductos.Columns.Clear()
+                    Dim db As New BindingSource
+                    db.DataSource = tabla
+                    DataGridViewProductos.DataSource = db
+                    da2.Dispose()
+
+                    DataGridViewProductos.Columns(1).Width = 300
+
+
+                Else
+                    DataGridViewProductos.Columns.Clear()
+                    da2.Dispose()
+                End If
+
+
+            End Using
+        End Using
+    End Sub
 
 End Class

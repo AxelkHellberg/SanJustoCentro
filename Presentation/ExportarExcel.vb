@@ -20,7 +20,7 @@
 
             ' ¿Cuantas columnas y cuantas filas?
 
-            Dim NCol As Integer = ElGrid.ColumnCount
+            Dim NCol As Integer = 8
 
             Dim NRow As Integer = ElGrid.RowCount
 
@@ -28,19 +28,38 @@
 
             'y vamos escribiendo.
 
-            For i As Integer = 1 To NCol
+            'For i As Integer = 1 To NCol
 
-                exHoja.Cells.Item(1, i) = ElGrid.Columns(i - 1).HeaderText
+            '                exHoja.Cells.Item(1, i) = ElGrid.Columns(i - 1).HeaderText
 
-            Next
+            'Next
+
+            exHoja.Cells.Item(1, 1) = "Codigo"
+            exHoja.Cells.Item(1, 2) = "Descripcion"
+            exHoja.Cells.Item(1, 3) = "DescripcionUnitaria"
+            exHoja.Cells.Item(1, 4) = "CostoPonderado"
+            exHoja.Cells.Item(1, 5) = "PrecioVenta1"
+            exHoja.Cells.Item(1, 6) = "Casa Matriz"
+            exHoja.Cells.Item(1, 7) = "Casa Matriz Costo"
+            exHoja.Cells.Item(1, 8) = "Casa Matriz PV"
+
 
             For Fila As Integer = 0 To NRow - 1
 
-                For Col As Integer = 0 To NCol - 1
+                exHoja.Cells.Item(Fila + 2, 1) = ElGrid.Item(0, Fila).Value
+                exHoja.Cells.Item(Fila + 2, 2) = "Hardware"
+                exHoja.Cells.Item(Fila + 2, 3) = ElGrid.Item(1, Fila).Value
+                exHoja.Cells.Item(Fila + 2, 4) = 0
+                exHoja.Cells.Item(Fila + 2, 5) = ElGrid.Item(3, Fila).Value
+                exHoja.Cells.Item(Fila + 2, 6) = ElGrid.Item(2, Fila).Value
+                exHoja.Cells.Item(Fila + 2, 7) = 0
+                exHoja.Cells.Item(Fila + 2, 8) = ElGrid.Item(3, Fila).Value * ElGrid.Item(2, Fila).Value
 
-                    exHoja.Cells.Item(Fila + 2, Col + 1) = ElGrid.Item(Col, Fila).Value
+                '  For Col As Integer = 0 To NCol - 1
 
-                Next
+                '    exHoja.Cells.Item(Fila + 2, Col + 1) = ElGrid.Item(Col, Fila).Value
+
+                'Next
 
             Next
 

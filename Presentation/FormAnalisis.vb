@@ -397,7 +397,7 @@ Public Class FormAnalisis
                 Using command = New SqlCommand()
 
                     command.Connection = connection
-                    command.CommandText = "SELECT codigo as Codigo,descripcion as Descripcion,stockPeru+stockArieta as Stock,precio As Precio
+                    command.CommandText = "SELECT codigo as Codigo,descripcion as Descripcion,stockPeru+stockArieta+stockArieta2 as Stock,precio As Precio
                                             FROM Producto"
                     command.CommandType = CommandType.Text
 

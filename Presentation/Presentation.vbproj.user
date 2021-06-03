@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PublishUrlHistory>C:\Users\axel\Desktop\ProyectoCentroComputacion\Paquete Instalacion 2021\|C:\Users\axel\Desktop\ProyectoCentroComputacion\Paquete Actualizacion\|C:\Users\axel\Desktop\ProyectoCentroComputacion\Paquete Instalacion\|C:\Users\axel\Desktop\ProyectoCentroComputacion\Paquete Instalacion\PAQUETE\|C:\Users\axel\Desktop\ProyectoCentroComputacion\Paquete Instalacion\PAQUETE IPV4\</PublishUrlHistory>
+    <PublishUrlHistory>C:\Users\AXEL\Desktop\Proyectos\SanJustoCentro\PaqueteInstalacion\|C:\Users\axel\Desktop\ProyectoCentroComputacion\Paquete Instalacion 2021\|C:\Users\axel\Desktop\ProyectoCentroComputacion\Paquete Actualizacion\|C:\Users\axel\Desktop\ProyectoCentroComputacion\Paquete Instalacion\|C:\Users\axel\Desktop\ProyectoCentroComputacion\Paquete Instalacion\PAQUETE\</PublishUrlHistory>
     <InstallUrlHistory>http://www.sanjustocentrocomputacion.net/</InstallUrlHistory>
     <SupportUrlHistory />
     <UpdateUrlHistory />

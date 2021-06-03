@@ -70,6 +70,9 @@ Public Class UserModel
         Return userDao.descontarSaldoClienteUserDao(total, ajuste, efectivo, tarjeta, interes, nombre)
     End Function
 
+    Public Function agregarCompraCliente(codProd As String, cant As Integer, cliente As String, precioProducto As Double) As Boolean
+        Return userDao.agregarCompraClienteUserDao(codProd, cant, cliente, precioProducto)
+    End Function
 
 
 

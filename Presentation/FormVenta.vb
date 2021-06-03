@@ -190,6 +190,7 @@ Public Class FormVenta
         Dim codVenta As Integer
         Dim ajuste As Double
         Dim debito As Double
+        Dim precioProducto As Double
         If Not String.IsNullOrEmpty(TextTarjeta.Text) Then
             tarjeta = TextTarjeta.Text
         Else
@@ -224,12 +225,19 @@ Public Class FormVenta
         For i As Integer = 0 To DataGridViewVenta.Rows.Count - 1
             campo1 = DataGridViewVenta.Rows(i).Cells(0).Value.ToString
             campo3 = DataGridViewVenta.Rows(i).Cells(2).Value.ToString
+            precioProducto = DataGridViewVenta.Rows(i).Cells(3).Value.ToString
             If String.IsNullOrEmpty(TextTarjeta.Text) Then
                 TextTarjeta.Text = "0"
             End If
             If String.IsNullOrEmpty(TextAjuste.Text) Then
                 TextAjuste.Text = "0"
             End If
+
+            If CheckCliente.Checked = True Then
+                userModel.agregarCompraCliente(campo1, campo3, ClienteAsignado.Text, precioProducto)
+            End If
+
+
             valid = userModel.VenderProductos(campo1, campo3, DataGridViewVendedores.CurrentRow.Cells(0).Value.ToString, codVenta)
 
             If valid = False Then

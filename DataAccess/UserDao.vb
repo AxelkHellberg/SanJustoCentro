@@ -225,6 +225,7 @@ Public Class UserDao
                 command.Parameters.AddWithValue("@tarjeta", tarjeta)
                 Dim rd As SqlDataReader
                 rd = command.ExecuteReader()
+                rd.Dispose()
                 command.CommandText = "BEGIN TRY BEGIN TRANSACTION UPDATE Caja SET total+=@total,efectivo+=@efectivo,tarjeta+=@tarjeta WHERE sucursal=@sucu COMMIT TRANSACTION; END TRY BEGIN CATCH ROLLBACK TRANSACTION; END CATCH;"
                 rd = command.ExecuteReader()
                 rd.Dispose()
@@ -427,6 +428,27 @@ Public Class UserDao
             End Using
         End Using
     End Function
+
+    Public Function agregarCompraClienteUserDao(codProd As String, cant As Integer, cliente As String, precioProducto As Double) As Boolean
+        Using connection = GetConnection()
+            connection.Open()
+            Using command = New SqlCommand()
+                command.Connection = connection
+                command.CommandText = "BEGIN Try BEGIN TRANSACTION INSERT INTO ClienteRetiroProducto (codCliente,codProd,cant,fechaCompra,precioProducto) VALUES(@cliente,@codProd,@cant,sanjusto_sanjusto.DevolverFecha(),@precioProducto) COMMIT TRANSACTION; End Try BEGIN Catch ROLLBACK TRANSACTION; End Catch;"
+                command.Parameters.AddWithValue("@cliente", cliente)
+                command.Parameters.AddWithValue("@codProd", codProd)
+                command.Parameters.AddWithValue("@cant", cant)
+                command.Parameters.AddWithValue("@precioProducto", precioProducto)
+                Dim rd As SqlDataReader
+
+                rd = command.ExecuteReader()
+                rd.Dispose()
+
+                Return True
+            End Using
+        End Using
+    End Function
+
 
     Public Function descontarSaldoClienteUserDao(total As Single, ajuste As Single, efectivo As Single, tarjeta As Single, interes As Single, nombre As String) As Integer
         Using connection = GetConnection()

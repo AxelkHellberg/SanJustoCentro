@@ -54,3 +54,17 @@ C:\Users\axel\Desktop\SanJustoCentro\Domain\obj\Debug\netstandard2.0\Domain.vbpr
 C:\Users\axel\Desktop\SanJustoCentro\Domain\obj\Debug\netstandard2.0\Domain.vbproj.CopyComplete
 C:\Users\axel\Desktop\SanJustoCentro\Domain\obj\Debug\netstandard2.0\Domain.dll
 C:\Users\axel\Desktop\SanJustoCentro\Domain\obj\Debug\netstandard2.0\Domain.pdb
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\Domain\obj\Debug\netstandard2.0\Domain.dll
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\Domain\obj\Debug\netstandard2.0\Domain.pdb
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\Domain\bin\Debug\netstandard2.0\Domain.deps.json
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\Domain\bin\Debug\netstandard2.0\Domain.dll
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\Domain\bin\Debug\netstandard2.0\Domain.pdb
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\Domain\bin\Debug\netstandard2.0\CapaComun.dll
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\Domain\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\Domain\bin\Debug\netstandard2.0\CapaComun.pdb
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\Domain\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\Domain\obj\Debug\netstandard2.0\Domain.vbproj.AssemblyReference.cache
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfoInputs.cache
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfo.vb
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\Domain\obj\Debug\netstandard2.0\Domain.vbproj.CoreCompileInputs.cache
+C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\Domain\obj\Debug\netstandard2.0\Domain.vbproj.CopyComplete
