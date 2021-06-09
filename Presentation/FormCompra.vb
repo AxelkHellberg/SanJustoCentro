@@ -319,7 +319,7 @@ Public Class FormCompra
         TextCodigoBarra.Text = DataGridViewBusqueda.CurrentRow.Cells(0).Value.ToString()
         TextDescripcion.Text = DataGridViewBusqueda.CurrentRow.Cells(1).Value.ToString()
         TextCosto.Text = DataGridViewBusqueda.CurrentRow.Cells(2).Value.ToString()
-        TextPorcentaje.Text = DataGridViewBusqueda.CurrentRow.Cells(6).Value.ToString()
+        TextPorcentaje.Text = DataGridViewBusqueda.CurrentRow.Cells(7).Value.ToString()
         TextPrecio.Text = DataGridViewBusqueda.CurrentRow.Cells(3).Value.ToString()
     End Sub
     Private Sub DataGridViewCompra_RowsAdded(sender As Object, e As DataGridViewRowsAddedEventArgs) Handles DataGridViewCompra.RowsAdded

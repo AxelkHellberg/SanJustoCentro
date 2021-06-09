@@ -193,3 +193,43 @@ C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJus
 C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\Presentation\bin\Debug\San Justo Centro Computacion.exe
 C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\Presentation\bin\Debug\San Justo Centro Computacion.pdb
 C:\Users\axelk\Desktop\BackUpWindows\Proyectos sin subir a git 18-05-2021\SanJustoCentro\Presentation\bin\Debug\San Justo Centro Computacion.xml
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\San Justo Centro Computacion.exe.config
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\San Justo Centro Computacion.exe.manifest
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\San Justo Centro Computacion.application
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\San Justo Centro Computacion.exe
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\San Justo Centro Computacion.pdb
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\San Justo Centro Computacion.xml
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\CapaComun.dll
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\DataAccess.dll
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\Domain.dll
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\itextsharp.dll
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\System.Data.SqlClient.dll
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\CapaComun.pdb
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\DataAccess.pdb
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\Domain.pdb
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\itextsharp.xml
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\System.Data.SqlClient.xml
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\bin\Debug\es\Microsoft.VisualBasic.PowerPacks.resources.dll
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.vbproj.AssemblyReference.cache
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.vbproj.ResolveComReference.cache
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.FormCliente.resources
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.FormAnalisis.resources
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.FormCaja.resources
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.FormCobranzas.resources
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.FormCompra.resources
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.FormLogin.resources
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.FormPrincipal.resources
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.FormTesoro.resources
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.FormVenta.resources
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.Resources.resources
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.vbproj.GenerateResource.cache
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.vbproj.CoreCompileInputs.cache
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\San Justo Centro Computacion.TrustInfo.xml
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\San Justo Centro Computacion.exe.manifest
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\San Justo Centro Computacion.application
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\Presentation.vbproj.CopyComplete
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\San Justo Centro Computacion.exe
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\San Justo Centro Computacion.xml
+C:\Users\axelk\Desktop\Proyectos\SanJustoCentro\Presentation\obj\Debug\San Justo Centro Computacion.pdb

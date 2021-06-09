@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\axelk\\Desktop\\BackUpWindows\\Proyectos sin subir a git 18-05-2021\\SanJustoCentro\\CapaComun\\CapaComun.vbproj": {}
+    "C:\\Users\\axelk\\Desktop\\Proyectos\\SanJustoCentro\\CapaComun\\CapaComun.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\axelk\\Desktop\\BackUpWindows\\Proyectos sin subir a git 18-05-2021\\SanJustoCentro\\CapaComun\\CapaComun.vbproj": {
+    "C:\\Users\\axelk\\Desktop\\Proyectos\\SanJustoCentro\\CapaComun\\CapaComun.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\axelk\\Desktop\\BackUpWindows\\Proyectos sin subir a git 18-05-2021\\SanJustoCentro\\CapaComun\\CapaComun.vbproj",
+        "projectUniqueName": "C:\\Users\\axelk\\Desktop\\Proyectos\\SanJustoCentro\\CapaComun\\CapaComun.vbproj",
         "projectName": "CapaComun",
-        "projectPath": "C:\\Users\\axelk\\Desktop\\BackUpWindows\\Proyectos sin subir a git 18-05-2021\\SanJustoCentro\\CapaComun\\CapaComun.vbproj",
+        "projectPath": "C:\\Users\\axelk\\Desktop\\Proyectos\\SanJustoCentro\\CapaComun\\CapaComun.vbproj",
         "packagesPath": "C:\\Users\\axelk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\axelk\\Desktop\\BackUpWindows\\Proyectos sin subir a git 18-05-2021\\SanJustoCentro\\CapaComun\\obj\\",
+        "outputPath": "C:\\Users\\axelk\\Desktop\\Proyectos\\SanJustoCentro\\CapaComun\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

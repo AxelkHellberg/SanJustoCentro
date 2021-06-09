@@ -207,7 +207,7 @@ Public Class UserDao
             connection.Open()
             Using command = New SqlCommand()
                 command.Connection = connection
-                command.CommandText = "BEGIN TRY BEGIN TRANSACTION UPDATE Cliente SET Deuda-=@descontar where codCliente=@codCli COMMIT TRANSACTION; END TRY BEGIN CATCH ROLLBACK TRANSACTION; END CATCH;"
+                command.CommandText = "BEGIN TRY BEGIN TRANSACTION INSERT INTO PagoDeCliente VALUES(@codCli,@efectivo,@tarjeta,sanjusto_sanjusto.DevolverFecha(),@totalEfTar) UPDATE Cliente SET Deuda-=@descontar where codCliente=@codCli COMMIT TRANSACTION; END TRY BEGIN CATCH ROLLBACK TRANSACTION; END CATCH;"
                 If sucursalPA = "Peru" Then
                     command.Parameters.AddWithValue("@sucu", sucursalPA)
                 Else
@@ -223,6 +223,7 @@ Public Class UserDao
                 command.Parameters.AddWithValue("@codCli", codCli)
                 command.Parameters.AddWithValue("@efectivo", efectivo)
                 command.Parameters.AddWithValue("@tarjeta", tarjeta)
+                command.Parameters.AddWithValue("@totalEfTar", tarjeta + efectivo)
                 Dim rd As SqlDataReader
                 rd = command.ExecuteReader()
                 rd.Dispose()

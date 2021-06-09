@@ -901,11 +901,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\axelk\\Desktop\\BackUpWindows\\Proyectos sin subir a git 18-05-2021\\SanJustoCentro\\Domain\\Domain.vbproj",
+      "projectUniqueName": "C:\\Users\\axelk\\Desktop\\Proyectos\\SanJustoCentro\\Domain\\Domain.vbproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Users\\axelk\\Desktop\\BackUpWindows\\Proyectos sin subir a git 18-05-2021\\SanJustoCentro\\Domain\\Domain.vbproj",
+      "projectPath": "C:\\Users\\axelk\\Desktop\\Proyectos\\SanJustoCentro\\Domain\\Domain.vbproj",
       "packagesPath": "C:\\Users\\axelk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\axelk\\Desktop\\BackUpWindows\\Proyectos sin subir a git 18-05-2021\\SanJustoCentro\\Domain\\obj\\",
+      "outputPath": "C:\\Users\\axelk\\Desktop\\Proyectos\\SanJustoCentro\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -926,11 +926,11 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "C:\\Users\\axelk\\Desktop\\BackUpWindows\\Proyectos sin subir a git 18-05-2021\\SanJustoCentro\\CapaComun\\CapaComun.vbproj": {
-              "projectPath": "C:\\Users\\axelk\\Desktop\\BackUpWindows\\Proyectos sin subir a git 18-05-2021\\SanJustoCentro\\CapaComun\\CapaComun.vbproj"
+            "C:\\Users\\axelk\\Desktop\\Proyectos\\SanJustoCentro\\CapaComun\\CapaComun.vbproj": {
+              "projectPath": "C:\\Users\\axelk\\Desktop\\Proyectos\\SanJustoCentro\\CapaComun\\CapaComun.vbproj"
             },
-            "C:\\Users\\axelk\\Desktop\\BackUpWindows\\Proyectos sin subir a git 18-05-2021\\SanJustoCentro\\DataAccess\\DataAccess.vbproj": {
-              "projectPath": "C:\\Users\\axelk\\Desktop\\BackUpWindows\\Proyectos sin subir a git 18-05-2021\\SanJustoCentro\\DataAccess\\DataAccess.vbproj"
+            "C:\\Users\\axelk\\Desktop\\Proyectos\\SanJustoCentro\\DataAccess\\DataAccess.vbproj": {
+              "projectPath": "C:\\Users\\axelk\\Desktop\\Proyectos\\SanJustoCentro\\DataAccess\\DataAccess.vbproj"
             }
           }
         }

@@ -219,7 +219,7 @@ Public Class FormVenta
         Else
             'Si la venta es a un cliente en particular . . .
             codVenta = userModel.descontarSaldoCliente(TotalNum.Text, ajuste, TextEfectivo.Text, tarjeta + debito, interes, ClienteAsignado.Text)
-            CheckCliente.Checked = False
+
         End If
 
         For i As Integer = 0 To DataGridViewVenta.Rows.Count - 1
@@ -255,6 +255,7 @@ Public Class FormVenta
         TextCodigoBarra.Focus()
         TotalNum.Text = "0.00"
         DataGridViewVenta.ColumnHeadersVisible = False
+        CheckCliente.Checked = False
     End Sub
 
     Private Sub Boton3Coutas_Click(sender As Object, e As EventArgs) Handles Boton3Coutas.Click
